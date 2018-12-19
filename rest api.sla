@@ -1,0 +1,30 @@
+{
+    "class_id": "com-snaplogic-snaps-rest-restbasicauthaccount",
+    "class_version": 1,
+    "migration_metadata": {
+        "source_org": "Agilisium"
+    },
+    "property_map": {
+        "info": {
+            "label": {
+                "value": "rest api"
+            },
+            "notes": {
+                "value": null
+            }
+        },
+        "settings": {
+            "password": {
+                "fp": "7227853bc1e162e36f314c79fa97dc25bff63e76b4d1ba0d56e83253dfd1052d",
+                "key": "account-cloud-managed-5c063de766ef2719b0049fcf-2018-12-04T08:42:51-605214+00:00",
+                "sym_iv": "rXMdgH04hf/b15n+RiAfFw==",
+                "sym_key": "GCjT4YiqLAEVXl3ZarS0sJAVlZf5ikfO2ksTnZWC1FEtfErT1NeELx+dskIkL/1XodSC9CHznWxSOqhVqAQZ+6G4P+KreNbnMv9NZeFk3tLzbXxmxU5wf7abTIB/n/dnb32BchgqI24hhTQWF+IAPNXZX3yqGAf2BZvs/zyKJOecPIppP4OuECp6uYawF19vmarSxlXccclOHkvVrfFhbxkqTwcfokp3UA1gr2ap0a11gr0C7zSETUGz5wJkHyfBo9DSQ1dMhIoqEvU1NKHlajQ7VBUktgy+O2Mda8zVP5FD1ehiAczl5PTeCo28l/i94WlFKWm7K9Qc512SDNXxwQ==",
+                "value": "1JqDDjfgBXDbEU0SO0L2Gg=="
+            },
+            "username": {
+                "value": "ganesh.elango@agilisium.com"
+            }
+        },
+        "view_serial": 100
+    }
+}
