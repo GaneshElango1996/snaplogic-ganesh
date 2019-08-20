@@ -1,7 +1,468 @@
 {
     "class_id": "com-snaplogic-pipeline",
-    "class_version": 8,
-    "link_map": {},
+    "class_map": {
+        "11111111-1111-1111-1111-000000000006": {
+            "class_build_tag": "snapsmrc500",
+            "class_fqid": "com-snaplogic-snaps-sparksql2x-hdfsread_1-snapsmrc500",
+            "class_id": "com-snaplogic-snaps-sparksql2x-hdfsread",
+            "class_version": 1,
+            "instance_fqid": "11111111-1111-1111-1111-000000000006_1",
+            "instance_id": "11111111-1111-1111-1111-000000000006",
+            "instance_version": 1,
+            "property_map": {
+                "error": {
+                    "error_behavior": {
+                        "value": "fail"
+                    }
+                },
+                "info": {
+                    "label": {
+                        "value": "File Reader"
+                    },
+                    "notes": {
+                        "value": null
+                    }
+                },
+                "output": {
+                    "output0": {
+                        "label": {
+                            "value": "output0"
+                        },
+                        "view_type": {
+                            "value": "binary"
+                        }
+                    }
+                },
+                "settings": {
+                    "directory": {
+                        "expression": false,
+                        "value": "s3://poc-common-user/ganesh@agilisium.com/source/sql training.txt"
+                    }
+                },
+                "view_serial": 100
+            }
+        },
+        "11111111-1111-1111-1111-000000000007": {
+            "class_build_tag": "snapsmrc500",
+            "class_fqid": "com-snaplogic-snaps-sparksql2x-csvparser_1-snapsmrc500",
+            "class_id": "com-snaplogic-snaps-sparksql2x-csvparser",
+            "class_version": 1,
+            "instance_fqid": "11111111-1111-1111-1111-000000000007_6",
+            "instance_id": "11111111-1111-1111-1111-000000000007",
+            "instance_version": 6,
+            "property_map": {
+                "error": {
+                    "error_behavior": {
+                        "value": "fail"
+                    }
+                },
+                "info": {
+                    "label": {
+                        "value": "CSV Parser"
+                    },
+                    "notes": {
+                        "value": null
+                    }
+                },
+                "input": {
+                    "input0": {
+                        "label": {
+                            "value": "input0"
+                        },
+                        "view_type": {
+                            "value": "binary"
+                        }
+                    }
+                },
+                "output": {
+                    "output0": {
+                        "label": {
+                            "value": "output0"
+                        },
+                        "view_type": {
+                            "value": "document"
+                        }
+                    }
+                },
+                "settings": {
+                    "charset": {
+                        "value": "UTF-8"
+                    },
+                    "column_definitions": {
+                        "value": [
+                            {
+                                "column_name": {
+                                    "value": "Sno"
+                                },
+                                "column_type": {
+                                    "value": "String"
+                                }
+                            },
+                            {
+                                "column_name": {
+                                    "value": "name"
+                                },
+                                "column_type": {
+                                    "value": "String"
+                                }
+                            },
+                            {
+                                "column_name": {
+                                    "value": "Salary"
+                                },
+                                "column_type": {
+                                    "value": "Integer"
+                                }
+                            },
+                            {
+                                "column_name": {
+                                    "value": "Designation"
+                                },
+                                "column_type": {
+                                    "value": "String"
+                                }
+                            },
+                            {
+                                "column_name": {
+                                    "value": "Gender"
+                                },
+                                "column_type": {
+                                    "value": "String"
+                                }
+                            }
+                        ]
+                    },
+                    "delimiter": {
+                        "value": ","
+                    },
+                    "escape": {
+                        "value": "\\"
+                    },
+                    "header": {
+                        "value": true
+                    },
+                    "hive_table_name": {
+                        "value": null
+                    },
+                    "library": {
+                        "value": "univocity"
+                    },
+                    "mode": {
+                        "value": "PERMISSIVE"
+                    },
+                    "quote": {
+                        "value": "\""
+                    },
+                    "schema": {
+                        "value": "# Example Schema used by snaps in SparkSQL2x snappack.\n# The schema should be in JSON format expected by StructType.fromJson(String jsonSchema).\n# For more details about StructType please refer following link.\n# https://spark.apache.org/docs/2.3.0/api/java/org/apache/spark/sql/types/StructType.html\n# NOTE: Line starting with '#' will be filtered out as comments.\n#\n#\n# Example CSV Data :\n# \"emp_no\",\"birth_date\",\"first_name\",\"last_name\",\"gender\",\"hire_date\"\n# \"10001\",\"1953-09-02\",\"Georgi\",\"Facello\",\"M\",\"1986-06-26\"\n# \"10002\",\"1964-06-02\",\"Bezalel\",\"Simmel\",\"F\",\"1985-11-21\"\n#\n# Schema for the above example:\n#{\n#    \"type\": \"struct\",\n#    \"fields\": [\n#        {\n#            \"name\": \"emp_no\",\n#            \"type\": \"string\",\n#            \"nullable\": true,\n#            \"metadata\": {}\n#        },\n#        {\n#            \"name\": \"birth_date\",\n#            \"type\": \"string\",\n#            \"nullable\": true,\n#            \"metadata\": {}\n#        },\n#        {\n#            \"name\": \"first_name\",\n#            \"type\": \"string\",\n#            \"nullable\": true,\n#            \"metadata\": {}\n#        },\n#        {\n#            \"name\": \"last_name\",\n#            \"type\": \"string\",\n#            \"nullable\": true,\n#            \"metadata\": {}\n#        },\n#        {\n#            \"name\": \"gender\",\n#            \"type\": \"string\",\n#            \"nullable\": true,\n#            \"metadata\": {}\n#        },\n#        {\n#            \"name\": \"hire_date\",\n#            \"type\": \"string\",\n#            \"nullable\": true,\n#            \"metadata\": {}\n#        }\n#    ]\n#}\n#\n#\n# Example JSON Data :\n# [{\"name\":\"John Doe\",\"age\":30,\"height\":72.5,\"phone_numbers\":[\"555-5555\",\"444-4444\"],\"address\":{\"street\":\"43 main st\",\"city\":\"Springfield\",\"state\":\"CA\"}}]\n# Schema for the above example:\n#\n#{\n#\t\"type\": \"struct\",\n#\t\"fields\": [{\n#\t\t\"name\": \"address\",\n#\t\t\"type\": {\n#\t\t\t\"type\": \"struct\",\n#\t\t\t\"fields\": [{\n#\t\t\t\t\"name\": \"city\",\n#\t\t\t\t\"type\": \"string\",\n#\t\t\t\t\"nullable\": true,\n#\t\t\t\t\"metadata\": {}\n#\t\t\t}, {\n#\t\t\t\t\"name\": \"state\",\n#\t\t\t\t\"type\": \"string\",\n#\t\t\t\t\"nullable\": true,\n#\t\t\t\t\"metadata\": {}\n#\t\t\t}, {\n#\t\t\t\t\"name\": \"street\",\n#\t\t\t\t\"type\": \"string\",\n#\t\t\t\t\"nullable\": true,\n#\t\t\t\t\"metadata\": {}\n#\t\t\t}]\n#\t\t},\n#\t\t\"nullable\": true,\n#\t\t\"metadata\": {}\n#\t}, {\n#\t\t\"name\": \"age\",\n#\t\t\"type\": \"long\",\n#\t\t\"nullable\": true,\n#\t\t\"metadata\": {}\n#\t}, {\n#\t\t\"name\": \"height\",\n#\t\t\"type\": \"double\",\n#\t\t\"nullable\": true,\n#\t\t\"metadata\": {}\n#\t}, {\n#\t\t\"name\": \"name\",\n#\t\t\"type\": \"string\",\n#\t\t\"nullable\": true,\n#\t\t\"metadata\": {}\n#\t}, {\n#\t\t\"name\": \"phone_numbers\",\n#\t\t\"type\": {\n#\t\t\t\"type\": \"array\",\n#\t\t\t\"elementType\": \"string\",\n#\t\t\t\"containsNull\": true\n#\t\t},\n#\t\t\"nullable\": true,\n#\t\t\"metadata\": {}\n#\t}]\n#}"
+                    },
+                    "schema_source": {
+                        "value": "Manual entry"
+                    }
+                },
+                "view_serial": 100
+            }
+        },
+        "11111111-1111-1111-1111-000000000008": {
+            "class_build_tag": "snapsmrc500",
+            "class_fqid": "com-snaplogic-snaps-sparksql2x-hdfswrite_1-snapsmrc500",
+            "class_id": "com-snaplogic-snaps-sparksql2x-hdfswrite",
+            "class_version": 1,
+            "instance_fqid": "11111111-1111-1111-1111-000000000008_1",
+            "instance_id": "11111111-1111-1111-1111-000000000008",
+            "instance_version": 1,
+            "property_map": {
+                "error": {
+                    "error_behavior": {
+                        "value": "fail"
+                    }
+                },
+                "info": {
+                    "label": {
+                        "value": "File Writer"
+                    },
+                    "notes": {
+                        "value": null
+                    }
+                },
+                "input": {
+                    "input0": {
+                        "label": {
+                            "value": "input0"
+                        },
+                        "view_type": {
+                            "value": "binary"
+                        }
+                    }
+                },
+                "settings": {
+                    "directory": {
+                        "expression": false,
+                        "value": "s3://poc-common-user/ganesh@agilisium.com/source/extreme.csv"
+                    },
+                    "executable_during_suggest": {
+                        "value": false
+                    },
+                    "execution_mode": {
+                        "value": "Execute only"
+                    },
+                    "file_action": {
+                        "value": "Overwrite"
+                    }
+                },
+                "view_serial": 100
+            }
+        },
+        "11111111-1111-1111-1111-000000000009": {
+            "class_build_tag": "snapsmrc500",
+            "class_fqid": "com-snaplogic-snaps-sparksql2x-csvformatter_1-snapsmrc500",
+            "class_id": "com-snaplogic-snaps-sparksql2x-csvformatter",
+            "class_version": 1,
+            "instance_fqid": "11111111-1111-1111-1111-000000000009_1",
+            "instance_id": "11111111-1111-1111-1111-000000000009",
+            "instance_version": 1,
+            "property_map": {
+                "error": {
+                    "error_behavior": {
+                        "value": "fail"
+                    }
+                },
+                "info": {
+                    "label": {
+                        "value": "CSV Formatter"
+                    }
+                },
+                "input": {
+                    "input0": {
+                        "label": {
+                            "value": "input0"
+                        },
+                        "view_type": {
+                            "value": "document"
+                        }
+                    }
+                },
+                "output": {
+                    "output0": {
+                        "label": {
+                            "value": "output0"
+                        },
+                        "view_type": {
+                            "value": "binary"
+                        }
+                    }
+                },
+                "settings": {
+                    "codec": {
+                        "value": "NONE"
+                    },
+                    "delimiter": {
+                        "value": ","
+                    },
+                    "escape": {
+                        "value": "\\"
+                    },
+                    "header": {
+                        "value": false
+                    },
+                    "quote": {
+                        "value": "\""
+                    },
+                    "quoteMode": {
+                        "value": "NONE"
+                    }
+                },
+                "view_serial": 100
+            }
+        },
+        "11111111-1111-1111-1111-00000000000a": {
+            "class_build_tag": "snapsmrc500",
+            "class_fqid": "com-snaplogic-snaps-sparksql2x-filter_1-snapsmrc500",
+            "class_id": "com-snaplogic-snaps-sparksql2x-filter",
+            "class_version": 1,
+            "instance_fqid": "11111111-1111-1111-1111-00000000000a_3",
+            "instance_id": "11111111-1111-1111-1111-00000000000a",
+            "instance_version": 3,
+            "property_map": {
+                "error": {
+                    "error_behavior": {
+                        "value": "fail"
+                    }
+                },
+                "info": {
+                    "label": {
+                        "value": "Filter"
+                    },
+                    "notes": {
+                        "value": null
+                    }
+                },
+                "input": {
+                    "input0": {
+                        "label": {
+                            "value": "input0"
+                        },
+                        "view_type": {
+                            "value": "document"
+                        }
+                    }
+                },
+                "output": {
+                    "output0": {
+                        "label": {
+                            "value": "output0"
+                        },
+                        "view_type": {
+                            "value": "document"
+                        }
+                    }
+                },
+                "settings": {
+                    "filterExpression": {
+                        "expression": false,
+                        "value": "Gender= 'M'"
+                    }
+                },
+                "view_serial": 100
+            }
+        },
+        "11111111-1111-1111-1111-00000000000b": {
+            "class_build_tag": "snapsmrc500",
+            "class_fqid": "com-snaplogic-snaps-sparksql2x-transform_1-snapsmrc500",
+            "class_id": "com-snaplogic-snaps-sparksql2x-transform",
+            "class_version": 1,
+            "instance_fqid": "11111111-1111-1111-1111-00000000000b_9",
+            "instance_id": "11111111-1111-1111-1111-00000000000b",
+            "instance_version": 9,
+            "property_map": {
+                "error": {
+                    "error_behavior": {
+                        "value": "fail"
+                    }
+                },
+                "info": {
+                    "label": {
+                        "value": "Transform"
+                    },
+                    "notes": {
+                        "value": null
+                    }
+                },
+                "input": {
+                    "input0": {
+                        "label": {
+                            "value": "input0"
+                        },
+                        "view_type": {
+                            "value": "document"
+                        }
+                    }
+                },
+                "output": {
+                    "output0": {
+                        "label": {
+                            "value": "output0"
+                        },
+                        "view_type": {
+                            "value": "document"
+                        }
+                    }
+                },
+                "settings": {
+                    "passThrough": {
+                        "value": true
+                    },
+                    "transformations": {
+                        "value": {
+                            "mappingTable": {
+                                "value": [
+                                    {
+                                        "expression": {
+                                            "expression": false,
+                                            "value": "if(Designation == \"QA\",\"yes\",Designation)"
+                                        },
+                                        "targetPath": {
+                                            "value": "$Designation"
+                                        }
+                                    },
+                                    {
+                                        "expression": {
+                                            "expression": false,
+                                            "value": "$Gender"
+                                        },
+                                        "targetPath": {
+                                            "value": "$Gender"
+                                        }
+                                    },
+                                    {
+                                        "expression": {
+                                            "expression": false,
+                                            "value": "$name"
+                                        },
+                                        "targetPath": {
+                                            "value": "$name"
+                                        }
+                                    },
+                                    {
+                                        "expression": {
+                                            "expression": false,
+                                            "value": "$Salary"
+                                        },
+                                        "targetPath": {
+                                            "value": "$Salary"
+                                        }
+                                    },
+                                    {
+                                        "expression": {
+                                            "expression": false,
+                                            "value": "$Sno"
+                                        },
+                                        "targetPath": {
+                                            "value": "$Sno"
+                                        }
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                },
+                "view_serial": 100
+            }
+        }
+    },
+    "class_version": 9,
+    "link_map": {
+        "link100": {
+            "dst_id": "11111111-1111-1111-1111-00000000000b",
+            "dst_view_id": "input0",
+            "src_id": "11111111-1111-1111-1111-000000000007",
+            "src_view_id": "output0"
+        },
+        "link101": {
+            "dst_id": "11111111-1111-1111-1111-000000000007",
+            "dst_view_id": "input0",
+            "src_id": "11111111-1111-1111-1111-000000000006",
+            "src_view_id": "output0"
+        },
+        "link102": {
+            "dst_id": "11111111-1111-1111-1111-00000000000a",
+            "dst_view_id": "input0",
+            "src_id": "11111111-1111-1111-1111-00000000000b",
+            "src_view_id": "output0"
+        },
+        "link103": {
+            "dst_id": "11111111-1111-1111-1111-000000000008",
+            "dst_view_id": "input0",
+            "src_id": "11111111-1111-1111-1111-000000000009",
+            "src_view_id": "output0"
+        },
+        "link104": {
+            "dst_id": "11111111-1111-1111-1111-000000000009",
+            "dst_view_id": "input0",
+            "src_id": "11111111-1111-1111-1111-00000000000a",
+            "src_view_id": "output0"
+        }
+    },
     "property_map": {
         "error": {
             "error_behavior": {
@@ -43,11 +504,489 @@
     },
     "render_map": {
         "default_snaplex": null,
-        "detail_map": {},
+        "detail_map": {
+            "11111111-1111-1111-1111-000000000006": {
+                "error": {},
+                "grid_x_int": 1,
+                "grid_y_int": 2,
+                "index": null,
+                "input": {},
+                "output": {},
+                "recommendation_id": null,
+                "rot_int": 0,
+                "rot_tail_int": 0,
+                "source": "snap catagory"
+            },
+            "11111111-1111-1111-1111-000000000007": {
+                "error": {},
+                "grid_x_int": 2,
+                "grid_y_int": 2,
+                "index": null,
+                "input": {},
+                "output": {},
+                "recommendation_id": null,
+                "rot_int": 0,
+                "rot_tail_int": 0,
+                "source": "snap catagory"
+            },
+            "11111111-1111-1111-1111-000000000008": {
+                "error": {},
+                "grid_x_int": 6,
+                "grid_y_int": 2,
+                "index": null,
+                "input": {},
+                "output": {},
+                "recommendation_id": null,
+                "rot_int": 0,
+                "rot_tail_int": 0,
+                "source": "snap catagory"
+            },
+            "11111111-1111-1111-1111-000000000009": {
+                "error": {},
+                "grid_x_int": 5,
+                "grid_y_int": 2,
+                "index": null,
+                "input": {},
+                "output": {},
+                "recommendation_id": null,
+                "rot_int": 0,
+                "rot_tail_int": 0,
+                "source": "snap catagory"
+            },
+            "11111111-1111-1111-1111-00000000000a": {
+                "error": {},
+                "grid_x_int": 4,
+                "grid_y_int": 2,
+                "index": null,
+                "input": {},
+                "output": {},
+                "recommendation_id": null,
+                "rot_int": 0,
+                "rot_tail_int": 0,
+                "source": "snap catagory"
+            },
+            "11111111-1111-1111-1111-00000000000b": {
+                "error": {},
+                "grid_x_int": 3,
+                "grid_y_int": 2,
+                "index": null,
+                "input": {},
+                "output": {},
+                "recommendation_id": null,
+                "rot_int": 0,
+                "rot_tail_int": 0,
+                "source": "snap catagory"
+            }
+        },
         "pan_x_num": 0,
         "pan_y_num": 0,
         "scale_ratio": 1
     },
-    "snap_map": {},
+    "snap_map": {
+        "11111111-1111-1111-1111-000000000006": {
+            "class_id": "com-snaplogic-snaps-sparksql2x-hdfsread",
+            "class_version": 1,
+            "instance_id": "11111111-1111-1111-1111-000000000006",
+            "property_map": {
+                "error": {
+                    "error_behavior": {
+                        "value": "fail"
+                    }
+                },
+                "info": {
+                    "label": {
+                        "value": "File Reader"
+                    },
+                    "notes": {
+                        "value": null
+                    }
+                },
+                "output": {
+                    "output0": {
+                        "label": {
+                            "value": "output0"
+                        },
+                        "view_type": {
+                            "value": "binary"
+                        }
+                    }
+                },
+                "settings": {
+                    "directory": {
+                        "expression": false,
+                        "value": "s3://poc-common-user/ganesh@agilisium.com/source/sql training.txt"
+                    }
+                },
+                "view_serial": 100
+            }
+        },
+        "11111111-1111-1111-1111-000000000007": {
+            "class_id": "com-snaplogic-snaps-sparksql2x-csvparser",
+            "class_version": 1,
+            "instance_id": "11111111-1111-1111-1111-000000000007",
+            "property_map": {
+                "error": {
+                    "error_behavior": {
+                        "value": "fail"
+                    }
+                },
+                "info": {
+                    "label": {
+                        "value": "CSV Parser"
+                    },
+                    "notes": {
+                        "value": null
+                    }
+                },
+                "input": {
+                    "input0": {
+                        "label": {
+                            "value": "input0"
+                        },
+                        "view_type": {
+                            "value": "binary"
+                        }
+                    }
+                },
+                "output": {
+                    "output0": {
+                        "label": {
+                            "value": "output0"
+                        },
+                        "view_type": {
+                            "value": "document"
+                        }
+                    }
+                },
+                "settings": {
+                    "charset": {
+                        "value": "UTF-8"
+                    },
+                    "column_definitions": {
+                        "value": [
+                            {
+                                "column_name": {
+                                    "value": "Sno"
+                                },
+                                "column_type": {
+                                    "value": "String"
+                                }
+                            },
+                            {
+                                "column_name": {
+                                    "value": "name"
+                                },
+                                "column_type": {
+                                    "value": "String"
+                                }
+                            },
+                            {
+                                "column_name": {
+                                    "value": "Salary"
+                                },
+                                "column_type": {
+                                    "value": "Integer"
+                                }
+                            },
+                            {
+                                "column_name": {
+                                    "value": "Designation"
+                                },
+                                "column_type": {
+                                    "value": "String"
+                                }
+                            },
+                            {
+                                "column_name": {
+                                    "value": "Gender"
+                                },
+                                "column_type": {
+                                    "value": "String"
+                                }
+                            }
+                        ]
+                    },
+                    "delimiter": {
+                        "value": ","
+                    },
+                    "escape": {
+                        "value": "\\"
+                    },
+                    "header": {
+                        "value": true
+                    },
+                    "hive_table_name": {
+                        "value": null
+                    },
+                    "library": {
+                        "value": "univocity"
+                    },
+                    "mode": {
+                        "value": "PERMISSIVE"
+                    },
+                    "quote": {
+                        "value": "\""
+                    },
+                    "schema": {
+                        "value": "# Example Schema used by snaps in SparkSQL2x snappack.\n# The schema should be in JSON format expected by StructType.fromJson(String jsonSchema).\n# For more details about StructType please refer following link.\n# https://spark.apache.org/docs/2.3.0/api/java/org/apache/spark/sql/types/StructType.html\n# NOTE: Line starting with '#' will be filtered out as comments.\n#\n#\n# Example CSV Data :\n# \"emp_no\",\"birth_date\",\"first_name\",\"last_name\",\"gender\",\"hire_date\"\n# \"10001\",\"1953-09-02\",\"Georgi\",\"Facello\",\"M\",\"1986-06-26\"\n# \"10002\",\"1964-06-02\",\"Bezalel\",\"Simmel\",\"F\",\"1985-11-21\"\n#\n# Schema for the above example:\n#{\n#    \"type\": \"struct\",\n#    \"fields\": [\n#        {\n#            \"name\": \"emp_no\",\n#            \"type\": \"string\",\n#            \"nullable\": true,\n#            \"metadata\": {}\n#        },\n#        {\n#            \"name\": \"birth_date\",\n#            \"type\": \"string\",\n#            \"nullable\": true,\n#            \"metadata\": {}\n#        },\n#        {\n#            \"name\": \"first_name\",\n#            \"type\": \"string\",\n#            \"nullable\": true,\n#            \"metadata\": {}\n#        },\n#        {\n#            \"name\": \"last_name\",\n#            \"type\": \"string\",\n#            \"nullable\": true,\n#            \"metadata\": {}\n#        },\n#        {\n#            \"name\": \"gender\",\n#            \"type\": \"string\",\n#            \"nullable\": true,\n#            \"metadata\": {}\n#        },\n#        {\n#            \"name\": \"hire_date\",\n#            \"type\": \"string\",\n#            \"nullable\": true,\n#            \"metadata\": {}\n#        }\n#    ]\n#}\n#\n#\n# Example JSON Data :\n# [{\"name\":\"John Doe\",\"age\":30,\"height\":72.5,\"phone_numbers\":[\"555-5555\",\"444-4444\"],\"address\":{\"street\":\"43 main st\",\"city\":\"Springfield\",\"state\":\"CA\"}}]\n# Schema for the above example:\n#\n#{\n#\t\"type\": \"struct\",\n#\t\"fields\": [{\n#\t\t\"name\": \"address\",\n#\t\t\"type\": {\n#\t\t\t\"type\": \"struct\",\n#\t\t\t\"fields\": [{\n#\t\t\t\t\"name\": \"city\",\n#\t\t\t\t\"type\": \"string\",\n#\t\t\t\t\"nullable\": true,\n#\t\t\t\t\"metadata\": {}\n#\t\t\t}, {\n#\t\t\t\t\"name\": \"state\",\n#\t\t\t\t\"type\": \"string\",\n#\t\t\t\t\"nullable\": true,\n#\t\t\t\t\"metadata\": {}\n#\t\t\t}, {\n#\t\t\t\t\"name\": \"street\",\n#\t\t\t\t\"type\": \"string\",\n#\t\t\t\t\"nullable\": true,\n#\t\t\t\t\"metadata\": {}\n#\t\t\t}]\n#\t\t},\n#\t\t\"nullable\": true,\n#\t\t\"metadata\": {}\n#\t}, {\n#\t\t\"name\": \"age\",\n#\t\t\"type\": \"long\",\n#\t\t\"nullable\": true,\n#\t\t\"metadata\": {}\n#\t}, {\n#\t\t\"name\": \"height\",\n#\t\t\"type\": \"double\",\n#\t\t\"nullable\": true,\n#\t\t\"metadata\": {}\n#\t}, {\n#\t\t\"name\": \"name\",\n#\t\t\"type\": \"string\",\n#\t\t\"nullable\": true,\n#\t\t\"metadata\": {}\n#\t}, {\n#\t\t\"name\": \"phone_numbers\",\n#\t\t\"type\": {\n#\t\t\t\"type\": \"array\",\n#\t\t\t\"elementType\": \"string\",\n#\t\t\t\"containsNull\": true\n#\t\t},\n#\t\t\"nullable\": true,\n#\t\t\"metadata\": {}\n#\t}]\n#}"
+                    },
+                    "schema_source": {
+                        "value": "Manual entry"
+                    }
+                },
+                "view_serial": 100
+            }
+        },
+        "11111111-1111-1111-1111-000000000008": {
+            "class_id": "com-snaplogic-snaps-sparksql2x-hdfswrite",
+            "class_version": 1,
+            "instance_id": "11111111-1111-1111-1111-000000000008",
+            "property_map": {
+                "error": {
+                    "error_behavior": {
+                        "value": "fail"
+                    }
+                },
+                "info": {
+                    "label": {
+                        "value": "File Writer"
+                    },
+                    "notes": {
+                        "value": null
+                    }
+                },
+                "input": {
+                    "input0": {
+                        "label": {
+                            "value": "input0"
+                        },
+                        "view_type": {
+                            "value": "binary"
+                        }
+                    }
+                },
+                "settings": {
+                    "directory": {
+                        "expression": false,
+                        "value": "s3://poc-common-user/ganesh@agilisium.com/source/extreme.csv"
+                    },
+                    "executable_during_suggest": {
+                        "value": false
+                    },
+                    "execution_mode": {
+                        "value": "Execute only"
+                    },
+                    "file_action": {
+                        "value": "Overwrite"
+                    }
+                },
+                "view_serial": 100
+            }
+        },
+        "11111111-1111-1111-1111-000000000009": {
+            "class_id": "com-snaplogic-snaps-sparksql2x-csvformatter",
+            "class_version": 1,
+            "instance_id": "11111111-1111-1111-1111-000000000009",
+            "property_map": {
+                "error": {
+                    "error_behavior": {
+                        "value": "fail"
+                    }
+                },
+                "info": {
+                    "label": {
+                        "value": "CSV Formatter"
+                    }
+                },
+                "input": {
+                    "input0": {
+                        "label": {
+                            "value": "input0"
+                        },
+                        "view_type": {
+                            "value": "document"
+                        }
+                    }
+                },
+                "output": {
+                    "output0": {
+                        "label": {
+                            "value": "output0"
+                        },
+                        "view_type": {
+                            "value": "binary"
+                        }
+                    }
+                },
+                "settings": {
+                    "codec": {
+                        "value": "NONE"
+                    },
+                    "delimiter": {
+                        "value": ","
+                    },
+                    "escape": {
+                        "value": "\\"
+                    },
+                    "header": {
+                        "value": false
+                    },
+                    "quote": {
+                        "value": "\""
+                    },
+                    "quoteMode": {
+                        "value": "NONE"
+                    }
+                },
+                "view_serial": 100
+            }
+        },
+        "11111111-1111-1111-1111-00000000000a": {
+            "class_id": "com-snaplogic-snaps-sparksql2x-filter",
+            "class_version": 1,
+            "instance_id": "11111111-1111-1111-1111-00000000000a",
+            "property_map": {
+                "error": {
+                    "error_behavior": {
+                        "value": "fail"
+                    }
+                },
+                "info": {
+                    "label": {
+                        "value": "Filter"
+                    },
+                    "notes": {
+                        "value": null
+                    }
+                },
+                "input": {
+                    "input0": {
+                        "label": {
+                            "value": "input0"
+                        },
+                        "view_type": {
+                            "value": "document"
+                        }
+                    }
+                },
+                "output": {
+                    "output0": {
+                        "label": {
+                            "value": "output0"
+                        },
+                        "view_type": {
+                            "value": "document"
+                        }
+                    }
+                },
+                "settings": {
+                    "filterExpression": {
+                        "expression": false,
+                        "value": "Gender= 'M'"
+                    }
+                },
+                "view_serial": 100
+            }
+        },
+        "11111111-1111-1111-1111-00000000000b": {
+            "class_id": "com-snaplogic-snaps-sparksql2x-transform",
+            "class_version": 1,
+            "instance_id": "11111111-1111-1111-1111-00000000000b",
+            "property_map": {
+                "error": {
+                    "error_behavior": {
+                        "value": "fail"
+                    }
+                },
+                "info": {
+                    "label": {
+                        "value": "Transform"
+                    },
+                    "notes": {
+                        "value": null
+                    }
+                },
+                "input": {
+                    "input0": {
+                        "label": {
+                            "value": "input0"
+                        },
+                        "view_type": {
+                            "value": "document"
+                        }
+                    }
+                },
+                "output": {
+                    "output0": {
+                        "label": {
+                            "value": "output0"
+                        },
+                        "view_type": {
+                            "value": "document"
+                        }
+                    }
+                },
+                "settings": {
+                    "passThrough": {
+                        "value": true
+                    },
+                    "transformations": {
+                        "value": {
+                            "mappingTable": {
+                                "value": [
+                                    {
+                                        "expression": {
+                                            "expression": false,
+                                            "value": "if(Designation == \"QA\",\"yes\",Designation)"
+                                        },
+                                        "targetPath": {
+                                            "value": "$Designation"
+                                        }
+                                    },
+                                    {
+                                        "expression": {
+                                            "expression": false,
+                                            "value": "$Gender"
+                                        },
+                                        "targetPath": {
+                                            "value": "$Gender"
+                                        }
+                                    },
+                                    {
+                                        "expression": {
+                                            "expression": false,
+                                            "value": "$name"
+                                        },
+                                        "targetPath": {
+                                            "value": "$name"
+                                        }
+                                    },
+                                    {
+                                        "expression": {
+                                            "expression": false,
+                                            "value": "$Salary"
+                                        },
+                                        "targetPath": {
+                                            "value": "$Salary"
+                                        }
+                                    },
+                                    {
+                                        "expression": {
+                                            "expression": false,
+                                            "value": "$Sno"
+                                        },
+                                        "targetPath": {
+                                            "value": "$Sno"
+                                        }
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                },
+                "view_serial": 100
+            }
+        }
+    },
     "target_runtime": "extreme"
 }

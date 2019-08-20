@@ -1,0 +1,3682 @@
+{
+    "class_id": "com-snaplogic-pipeline",
+    "class_map": {
+        "11111111-1111-1111-1111-00000000000f": {
+            "class_build_tag": "snapsmrc500",
+            "class_fqid": "com-snaplogic-snaps-sqlserver-insert_1-snapsmrc500",
+            "class_id": "com-snaplogic-snaps-sqlserver-insert",
+            "class_version": 1,
+            "instance_fqid": "11111111-1111-1111-1111-00000000000f_2",
+            "instance_id": "11111111-1111-1111-1111-00000000000f",
+            "instance_version": 2,
+            "property_map": {
+                "account": {
+                    "account_ref": {
+                        "expression": false,
+                        "value": {
+                            "label": {
+                                "expression": false,
+                                "value": "GANESH_SQL"
+                            },
+                            "ref_class_id": {
+                                "value": "com-snaplogic-snap-api-sql-accounts-sqlserverdatabaseaccount"
+                            },
+                            "ref_id": {
+                                "expression": false,
+                                "value": "d3f4d914-d0d6-4ef3-b7b0-e00a82d3b080"
+                            }
+                        }
+                    }
+                },
+                "error": {
+                    "error0": {
+                        "label": {
+                            "value": "error0"
+                        },
+                        "view_type": {
+                            "value": "document"
+                        }
+                    },
+                    "error_behavior": {
+                        "value": "fail"
+                    }
+                },
+                "info": {
+                    "label": {
+                        "value": "Microsoft SQL Server"
+                    },
+                    "notes": {
+                        "value": null
+                    }
+                },
+                "input": {
+                    "input0": {
+                        "label": {
+                            "value": "input0"
+                        },
+                        "view_type": {
+                            "value": "document"
+                        }
+                    }
+                },
+                "settings": {
+                    "createTable": {
+                        "value": false
+                    },
+                    "executable_during_suggest": {
+                        "value": false
+                    },
+                    "execution_mode": {
+                        "value": "Execute only"
+                    },
+                    "preserveCaseSensistiveness": {
+                        "value": false
+                    },
+                    "schemaName": {
+                        "expression": false,
+                        "value": "dbo"
+                    },
+                    "tableName": {
+                        "expression": false,
+                        "value": "Student_news"
+                    }
+                },
+                "view_serial": 100
+            }
+        },
+        "11111111-1111-1111-1111-000000000010": {
+            "class_build_tag": "snapsmrc500",
+            "class_fqid": "com-snaplogic-snaps-sqlserver-insert_1-snapsmrc500",
+            "class_id": "com-snaplogic-snaps-sqlserver-insert",
+            "class_version": 1,
+            "instance_fqid": "11111111-1111-1111-1111-000000000010_2",
+            "instance_id": "11111111-1111-1111-1111-000000000010",
+            "instance_version": 2,
+            "property_map": {
+                "account": {
+                    "account_ref": {
+                        "expression": false,
+                        "value": {
+                            "label": {
+                                "expression": false,
+                                "value": "GANESH_SQL"
+                            },
+                            "ref_class_id": {
+                                "value": "com-snaplogic-snap-api-sql-accounts-sqlserverdatabaseaccount"
+                            },
+                            "ref_id": {
+                                "expression": false,
+                                "value": "d3f4d914-d0d6-4ef3-b7b0-e00a82d3b080"
+                            }
+                        }
+                    }
+                },
+                "error": {
+                    "error0": {
+                        "label": {
+                            "value": "error0"
+                        },
+                        "view_type": {
+                            "value": "document"
+                        }
+                    },
+                    "error_behavior": {
+                        "value": "fail"
+                    }
+                },
+                "info": {
+                    "label": {
+                        "value": "Microsoft SQL Server"
+                    },
+                    "notes": {
+                        "value": null
+                    }
+                },
+                "input": {
+                    "input0": {
+                        "label": {
+                            "value": "input0"
+                        },
+                        "view_type": {
+                            "value": "document"
+                        }
+                    }
+                },
+                "settings": {
+                    "createTable": {
+                        "value": false
+                    },
+                    "executable_during_suggest": {
+                        "value": false
+                    },
+                    "execution_mode": {
+                        "value": "Execute only"
+                    },
+                    "preserveCaseSensistiveness": {
+                        "value": false
+                    },
+                    "schemaName": {
+                        "expression": false,
+                        "value": "dbo"
+                    },
+                    "tableName": {
+                        "expression": false,
+                        "value": "Student_news"
+                    }
+                },
+                "view_serial": 100
+            }
+        },
+        "11111111-1111-1111-1111-000000000011": {
+            "class_build_tag": "snapsmrc500",
+            "class_fqid": "com-snaplogic-snaps-sqlserver-select_3-snapsmrc500",
+            "class_id": "com-snaplogic-snaps-sqlserver-select",
+            "class_version": 3,
+            "instance_fqid": "11111111-1111-1111-1111-000000000011_2",
+            "instance_id": "11111111-1111-1111-1111-000000000011",
+            "instance_version": 2,
+            "property_map": {
+                "account": {
+                    "account_ref": {
+                        "expression": false,
+                        "value": {
+                            "label": {
+                                "expression": false,
+                                "value": "GANESH_SQL"
+                            },
+                            "ref_class_id": {
+                                "value": "com-snaplogic-snap-api-sql-accounts-sqlserverdatabaseaccount"
+                            },
+                            "ref_id": {
+                                "expression": false,
+                                "value": "d3f4d914-d0d6-4ef3-b7b0-e00a82d3b080"
+                            }
+                        }
+                    }
+                },
+                "error": {
+                    "error0": {
+                        "label": {
+                            "value": "error0"
+                        },
+                        "view_type": {
+                            "value": "document"
+                        }
+                    },
+                    "error_behavior": {
+                        "value": "fail"
+                    }
+                },
+                "info": {
+                    "label": {
+                        "value": "Microsoft SQL Server"
+                    },
+                    "notes": {
+                        "value": null
+                    }
+                },
+                "output": {
+                    "output0": {
+                        "label": {
+                            "value": "output0"
+                        },
+                        "view_type": {
+                            "value": "document"
+                        }
+                    }
+                },
+                "settings": {
+                    "autoCommit": {
+                        "value": "False"
+                    },
+                    "autocommit": {
+                        "value": false
+                    },
+                    "ignoreEmptyResult": {
+                        "value": false
+                    },
+                    "limitOffset": {
+                        "expression": false,
+                        "value": null
+                    },
+                    "limitRows": {
+                        "expression": false,
+                        "value": null
+                    },
+                    "matchDataTypes": {
+                        "value": false
+                    },
+                    "orderBy": {
+                        "value": []
+                    },
+                    "outputFields": {
+                        "value": []
+                    },
+                    "passThrough": {
+                        "value": true
+                    },
+                    "schemaName": {
+                        "expression": false,
+                        "value": "dbo"
+                    },
+                    "tableName": {
+                        "expression": false,
+                        "value": "STUDENT_INFOMATION"
+                    },
+                    "whereClause": {
+                        "expression": false,
+                        "value": null
+                    }
+                },
+                "view_serial": 100
+            }
+        },
+        "11111111-1111-1111-1111-000000000012": {
+            "class_build_tag": "snapsmrc508",
+            "class_fqid": "com-snaplogic-snaps-sqlserver-delete_1-snapsmrc508",
+            "class_id": "com-snaplogic-snaps-sqlserver-delete",
+            "class_version": 1,
+            "instance_fqid": "11111111-1111-1111-1111-000000000012_2",
+            "instance_id": "11111111-1111-1111-1111-000000000012",
+            "instance_version": 2,
+            "property_map": {
+                "account": {
+                    "account_ref": {
+                        "expression": false,
+                        "value": {
+                            "label": {
+                                "expression": false,
+                                "value": "GANESH_SQL"
+                            },
+                            "ref_class_id": {
+                                "value": "com-snaplogic-snap-api-sql-accounts-sqlserverdatabaseaccount"
+                            },
+                            "ref_id": {
+                                "expression": false,
+                                "value": "d3f4d914-d0d6-4ef3-b7b0-e00a82d3b080"
+                            }
+                        }
+                    }
+                },
+                "error": {
+                    "error0": {
+                        "label": {
+                            "value": "error0"
+                        },
+                        "view_type": {
+                            "value": "document"
+                        }
+                    },
+                    "error_behavior": {
+                        "value": "fail"
+                    }
+                },
+                "info": {
+                    "label": {
+                        "value": "SQL Server - Delete"
+                    },
+                    "notes": {
+                        "value": null
+                    }
+                },
+                "input": {
+                    "input0": {
+                        "label": {
+                            "value": "input0"
+                        },
+                        "view_type": {
+                            "value": "document"
+                        }
+                    }
+                },
+                "settings": {
+                    "deleteCondition": {
+                        "expression": false,
+                        "value": "DEP_ID=$DEP_ID"
+                    },
+                    "executable_during_suggest": {
+                        "value": false
+                    },
+                    "execution_mode": {
+                        "value": "Execute only"
+                    },
+                    "schemaName": {
+                        "expression": false,
+                        "value": "dbo"
+                    },
+                    "tableName": {
+                        "expression": false,
+                        "value": "STUDENT_NEWS"
+                    }
+                },
+                "view_serial": 100
+            }
+        },
+        "11111111-1111-1111-1111-000000000013": {
+            "class_build_tag": "snapsmrc500",
+            "class_fqid": "com-snaplogic-snaps-sqlserver-update_1-snapsmrc500",
+            "class_id": "com-snaplogic-snaps-sqlserver-update",
+            "class_version": 1,
+            "instance_fqid": "11111111-1111-1111-1111-000000000013_2",
+            "instance_id": "11111111-1111-1111-1111-000000000013",
+            "instance_version": 2,
+            "property_map": {
+                "account": {
+                    "account_ref": {
+                        "expression": false,
+                        "value": {
+                            "label": {
+                                "expression": false,
+                                "value": "GANESH_SQL"
+                            },
+                            "ref_class_id": {
+                                "value": "com-snaplogic-snap-api-sql-accounts-sqlserverdatabaseaccount"
+                            },
+                            "ref_id": {
+                                "expression": false,
+                                "value": "d3f4d914-d0d6-4ef3-b7b0-e00a82d3b080"
+                            }
+                        }
+                    }
+                },
+                "error": {
+                    "error0": {
+                        "label": {
+                            "value": "error0"
+                        },
+                        "view_type": {
+                            "value": "document"
+                        }
+                    },
+                    "error_behavior": {
+                        "value": "fail"
+                    }
+                },
+                "info": {
+                    "label": {
+                        "value": "Update Strategy"
+                    },
+                    "notes": {
+                        "value": null
+                    }
+                },
+                "input": {
+                    "input0": {
+                        "label": {
+                            "value": "input0"
+                        },
+                        "view_type": {
+                            "value": "document"
+                        }
+                    }
+                },
+                "settings": {
+                    "executable_during_suggest": {
+                        "value": false
+                    },
+                    "execution_mode": {
+                        "value": "Execute only"
+                    },
+                    "schemaName": {
+                        "expression": false,
+                        "value": "dbo"
+                    },
+                    "tableName": {
+                        "expression": false,
+                        "value": "student_news"
+                    },
+                    "updateCondition": {
+                        "expression": false,
+                        "value": "DEPT_NAME"
+                    }
+                },
+                "view_serial": 100
+            }
+        },
+        "11111111-1111-1111-1111-000000000014": {
+            "class_build_tag": "snapsmrc500",
+            "class_fqid": "com-snaplogic-snaps-transform-datatransform_4-snapsmrc500",
+            "class_id": "com-snaplogic-snaps-transform-datatransform",
+            "class_version": 4,
+            "instance_fqid": "11111111-1111-1111-1111-000000000014_1",
+            "instance_id": "11111111-1111-1111-1111-000000000014",
+            "instance_version": 1,
+            "property_map": {
+                "account": {},
+                "error": {
+                    "error0": {
+                        "label": {
+                            "value": "error0"
+                        },
+                        "view_type": {
+                            "value": "document"
+                        }
+                    },
+                    "error_behavior": {
+                        "value": "fail"
+                    }
+                },
+                "info": {
+                    "label": {
+                        "value": "Expression"
+                    },
+                    "notes": {
+                        "value": null
+                    }
+                },
+                "input": {
+                    "input0": {
+                        "label": {
+                            "value": "input0"
+                        },
+                        "view_type": {
+                            "value": "document"
+                        }
+                    }
+                },
+                "output": {
+                    "output0": {
+                        "label": {
+                            "value": "output0"
+                        },
+                        "view_type": {
+                            "value": "document"
+                        }
+                    }
+                },
+                "settings": {
+                    "nullSafeAccess": {
+                        "value": false
+                    },
+                    "passThrough": {
+                        "value": false
+                    },
+                    "transformations": {
+                        "value": {
+                            "mappingRoot": {
+                                "value": "$"
+                            },
+                            "mappingTable": {
+                                "value": [
+                                    {
+                                        "expression": {
+                                            "expression": true,
+                                            "value": "$DEPT_NAME"
+                                        },
+                                        "targetPath": {
+                                            "value": "$DEPT_NAME"
+                                        }
+                                    },
+                                    {
+                                        "expression": {
+                                            "expression": true,
+                                            "value": "$STAFF_ID"
+                                        },
+                                        "targetPath": {
+                                            "value": "$STAFF_ID"
+                                        }
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                },
+                "view_serial": 100
+            }
+        },
+        "11111111-1111-1111-1111-000000000015": {
+            "class_build_tag": "snapsmrc500",
+            "class_fqid": "com-snaplogic-snaps-transform-datatransform_4-snapsmrc500",
+            "class_id": "com-snaplogic-snaps-transform-datatransform",
+            "class_version": 4,
+            "instance_fqid": "11111111-1111-1111-1111-000000000015_1",
+            "instance_id": "11111111-1111-1111-1111-000000000015",
+            "instance_version": 1,
+            "property_map": {
+                "account": {},
+                "error": {
+                    "error0": {
+                        "label": {
+                            "value": "error0"
+                        },
+                        "view_type": {
+                            "value": "document"
+                        }
+                    },
+                    "error_behavior": {
+                        "value": "fail"
+                    }
+                },
+                "info": {
+                    "label": {
+                        "value": "Expression"
+                    },
+                    "notes": {
+                        "value": null
+                    }
+                },
+                "input": {
+                    "input0": {
+                        "label": {
+                            "value": "input0"
+                        },
+                        "view_type": {
+                            "value": "document"
+                        }
+                    }
+                },
+                "output": {
+                    "output0": {
+                        "label": {
+                            "value": "output0"
+                        },
+                        "view_type": {
+                            "value": "document"
+                        }
+                    }
+                },
+                "settings": {
+                    "nullSafeAccess": {
+                        "value": false
+                    },
+                    "passThrough": {
+                        "value": false
+                    },
+                    "transformations": {
+                        "value": {
+                            "mappingRoot": {
+                                "value": "$"
+                            },
+                            "mappingTable": {
+                                "value": [
+                                    {
+                                        "expression": {
+                                            "expression": true,
+                                            "value": "$DEP_ID"
+                                        },
+                                        "targetPath": {
+                                            "value": "$DEP_ID"
+                                        }
+                                    },
+                                    {
+                                        "expression": {
+                                            "expression": true,
+                                            "value": "$STU_ID"
+                                        },
+                                        "targetPath": {
+                                            "value": "$STU_ID"
+                                        }
+                                    },
+                                    {
+                                        "expression": {
+                                            "expression": true,
+                                            "value": "$NAME"
+                                        },
+                                        "targetPath": {
+                                            "value": "$NAME"
+                                        }
+                                    },
+                                    {
+                                        "expression": {
+                                            "expression": true,
+                                            "value": "$PERCENTAGE"
+                                        },
+                                        "targetPath": {
+                                            "value": "$PERCENTAGE"
+                                        }
+                                    },
+                                    {
+                                        "expression": {
+                                            "expression": true,
+                                            "value": "$ROLL_NUMBER"
+                                        },
+                                        "targetPath": {
+                                            "value": "$ROLL_NUMBER"
+                                        }
+                                    },
+                                    {
+                                        "expression": {
+                                            "expression": true,
+                                            "value": "$YEARS"
+                                        },
+                                        "targetPath": {
+                                            "value": "$YEARS"
+                                        }
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                },
+                "view_serial": 100
+            }
+        },
+        "11111111-1111-1111-1111-000000000016": {
+            "class_build_tag": "snapsmrc500",
+            "class_fqid": "com-snaplogic-snaps-transform-datatransform_4-snapsmrc500",
+            "class_id": "com-snaplogic-snaps-transform-datatransform",
+            "class_version": 4,
+            "instance_fqid": "11111111-1111-1111-1111-000000000016_1",
+            "instance_id": "11111111-1111-1111-1111-000000000016",
+            "instance_version": 1,
+            "property_map": {
+                "account": {},
+                "error": {
+                    "error0": {
+                        "label": {
+                            "value": "error0"
+                        },
+                        "view_type": {
+                            "value": "document"
+                        }
+                    },
+                    "error_behavior": {
+                        "value": "fail"
+                    }
+                },
+                "info": {
+                    "label": {
+                        "value": "Expression"
+                    },
+                    "notes": {
+                        "value": null
+                    }
+                },
+                "input": {
+                    "input0": {
+                        "label": {
+                            "value": "input0"
+                        },
+                        "view_type": {
+                            "value": "document"
+                        }
+                    }
+                },
+                "output": {
+                    "output0": {
+                        "label": {
+                            "value": "output0"
+                        },
+                        "view_type": {
+                            "value": "document"
+                        }
+                    }
+                },
+                "settings": {
+                    "nullSafeAccess": {
+                        "value": false
+                    },
+                    "passThrough": {
+                        "value": false
+                    },
+                    "transformations": {
+                        "value": {
+                            "mappingRoot": {
+                                "value": "$"
+                            },
+                            "mappingTable": {
+                                "value": [
+                                    {
+                                        "expression": {
+                                            "expression": true,
+                                            "value": "$DEP_ID"
+                                        },
+                                        "targetPath": {
+                                            "value": "$DEP_ID"
+                                        }
+                                    },
+                                    {
+                                        "expression": {
+                                            "expression": true,
+                                            "value": "$STU_ID"
+                                        },
+                                        "targetPath": {
+                                            "value": "$STU_ID"
+                                        }
+                                    },
+                                    {
+                                        "expression": {
+                                            "expression": true,
+                                            "value": "$NAME"
+                                        },
+                                        "targetPath": {
+                                            "value": "$NAME"
+                                        }
+                                    },
+                                    {
+                                        "expression": {
+                                            "expression": true,
+                                            "value": "$PERCENTAGE"
+                                        },
+                                        "targetPath": {
+                                            "value": "$PERCENTAGE"
+                                        }
+                                    },
+                                    {
+                                        "expression": {
+                                            "expression": true,
+                                            "value": "$ROLL_NUMBER"
+                                        },
+                                        "targetPath": {
+                                            "value": "$ROLL_NUMBER"
+                                        }
+                                    },
+                                    {
+                                        "expression": {
+                                            "expression": true,
+                                            "value": "$YEARS"
+                                        },
+                                        "targetPath": {
+                                            "value": "$YEARS"
+                                        }
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                },
+                "view_serial": 100
+            }
+        },
+        "11111111-1111-1111-1111-000000000017": {
+            "class_build_tag": "snapsmrc500",
+            "class_fqid": "com-snaplogic-snaps-transform-datatransform_4-snapsmrc500",
+            "class_id": "com-snaplogic-snaps-transform-datatransform",
+            "class_version": 4,
+            "instance_fqid": "11111111-1111-1111-1111-000000000017_1",
+            "instance_id": "11111111-1111-1111-1111-000000000017",
+            "instance_version": 1,
+            "property_map": {
+                "account": {},
+                "error": {
+                    "error0": {
+                        "label": {
+                            "value": "error0"
+                        },
+                        "view_type": {
+                            "value": "document"
+                        }
+                    },
+                    "error_behavior": {
+                        "value": "fail"
+                    }
+                },
+                "info": {
+                    "label": {
+                        "value": "Expression"
+                    },
+                    "notes": {
+                        "value": null
+                    }
+                },
+                "input": {
+                    "input0": {
+                        "label": {
+                            "value": "input0"
+                        },
+                        "view_type": {
+                            "value": "document"
+                        }
+                    }
+                },
+                "output": {
+                    "output0": {
+                        "label": {
+                            "value": "output0"
+                        },
+                        "view_type": {
+                            "value": "document"
+                        }
+                    }
+                },
+                "settings": {
+                    "nullSafeAccess": {
+                        "value": false
+                    },
+                    "passThrough": {
+                        "value": false
+                    },
+                    "transformations": {
+                        "value": {
+                            "mappingRoot": {
+                                "value": "$"
+                            },
+                            "mappingTable": {
+                                "value": [
+                                    {
+                                        "expression": {
+                                            "expression": true,
+                                            "value": "$DEP_ID"
+                                        },
+                                        "targetPath": {
+                                            "value": "$DEP_ID"
+                                        }
+                                    },
+                                    {
+                                        "expression": {
+                                            "expression": true,
+                                            "value": "$STU_ID"
+                                        },
+                                        "targetPath": {
+                                            "value": "$STU_ID"
+                                        }
+                                    },
+                                    {
+                                        "expression": {
+                                            "expression": true,
+                                            "value": "$NAME"
+                                        },
+                                        "targetPath": {
+                                            "value": "$NAME"
+                                        }
+                                    },
+                                    {
+                                        "expression": {
+                                            "expression": true,
+                                            "value": "$PERCENTAGE"
+                                        },
+                                        "targetPath": {
+                                            "value": "$PERCENTAGE"
+                                        }
+                                    },
+                                    {
+                                        "expression": {
+                                            "expression": true,
+                                            "value": "$ROLL_NUMBER"
+                                        },
+                                        "targetPath": {
+                                            "value": "$ROLL_NUMBER"
+                                        }
+                                    },
+                                    {
+                                        "expression": {
+                                            "expression": true,
+                                            "value": "$YEARS"
+                                        },
+                                        "targetPath": {
+                                            "value": "$YEARS"
+                                        }
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                },
+                "view_serial": 100
+            }
+        },
+        "11111111-1111-1111-1111-000000000018": {
+            "class_build_tag": "snapsmrc500",
+            "class_fqid": "com-snaplogic-snaps-transform-datatransform_4-snapsmrc500",
+            "class_id": "com-snaplogic-snaps-transform-datatransform",
+            "class_version": 4,
+            "instance_fqid": "11111111-1111-1111-1111-000000000018_1",
+            "instance_id": "11111111-1111-1111-1111-000000000018",
+            "instance_version": 1,
+            "property_map": {
+                "account": {},
+                "error": {
+                    "error0": {
+                        "label": {
+                            "value": "error0"
+                        },
+                        "view_type": {
+                            "value": "document"
+                        }
+                    },
+                    "error_behavior": {
+                        "value": "fail"
+                    }
+                },
+                "info": {
+                    "label": {
+                        "value": "Expression"
+                    },
+                    "notes": {
+                        "value": null
+                    }
+                },
+                "input": {
+                    "input0": {
+                        "label": {
+                            "value": "input0"
+                        },
+                        "view_type": {
+                            "value": "document"
+                        }
+                    }
+                },
+                "output": {
+                    "output0": {
+                        "label": {
+                            "value": "output0"
+                        },
+                        "view_type": {
+                            "value": "document"
+                        }
+                    }
+                },
+                "settings": {
+                    "nullSafeAccess": {
+                        "value": false
+                    },
+                    "passThrough": {
+                        "value": false
+                    },
+                    "transformations": {
+                        "value": {
+                            "mappingRoot": {
+                                "value": "$"
+                            },
+                            "mappingTable": {
+                                "value": [
+                                    {
+                                        "expression": {
+                                            "expression": true,
+                                            "value": "$DEP_ID"
+                                        },
+                                        "targetPath": {
+                                            "value": "$DEP_ID"
+                                        }
+                                    },
+                                    {
+                                        "expression": {
+                                            "expression": true,
+                                            "value": "$STU_ID"
+                                        },
+                                        "targetPath": {
+                                            "value": "$STU_ID"
+                                        }
+                                    },
+                                    {
+                                        "expression": {
+                                            "expression": true,
+                                            "value": "$NAME"
+                                        },
+                                        "targetPath": {
+                                            "value": "$NAME"
+                                        }
+                                    },
+                                    {
+                                        "expression": {
+                                            "expression": true,
+                                            "value": "$PERCENTAGE"
+                                        },
+                                        "targetPath": {
+                                            "value": "$PERCENTAGE"
+                                        }
+                                    },
+                                    {
+                                        "expression": {
+                                            "expression": true,
+                                            "value": "$ROLL_NUMBER"
+                                        },
+                                        "targetPath": {
+                                            "value": "$ROLL_NUMBER"
+                                        }
+                                    },
+                                    {
+                                        "expression": {
+                                            "expression": true,
+                                            "value": "$YEARS"
+                                        },
+                                        "targetPath": {
+                                            "value": "$YEARS"
+                                        }
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                },
+                "view_serial": 100
+            }
+        },
+        "11111111-1111-1111-1111-000000000019": {
+            "class_build_tag": "snapsmrc500",
+            "class_fqid": "com-snaplogic-snaps-flow-router_2-snapsmrc500",
+            "class_id": "com-snaplogic-snaps-flow-router",
+            "class_version": 2,
+            "instance_fqid": "11111111-1111-1111-1111-000000000019_3",
+            "instance_id": "11111111-1111-1111-1111-000000000019",
+            "instance_version": 3,
+            "property_map": {
+                "account": {},
+                "error": {
+                    "error0": {
+                        "label": {
+                            "value": "error0"
+                        },
+                        "view_type": {
+                            "value": "document"
+                        }
+                    },
+                    "error_behavior": {
+                        "value": "fail"
+                    }
+                },
+                "info": {
+                    "label": {
+                        "value": "Router"
+                    },
+                    "notes": {
+                        "value": null
+                    }
+                },
+                "input": {
+                    "input0": {
+                        "label": {
+                            "value": "input0"
+                        },
+                        "view_type": {
+                            "value": "document"
+                        }
+                    }
+                },
+                "output": {
+                    "output0": {
+                        "label": {
+                            "value": "DEP1"
+                        },
+                        "view_type": {
+                            "value": "document"
+                        }
+                    },
+                    "output1": {
+                        "label": {
+                            "value": "DEP2"
+                        },
+                        "view_type": {
+                            "value": "document"
+                        }
+                    },
+                    "output2": {
+                        "label": {
+                            "value": "DEP3"
+                        },
+                        "view_type": {
+                            "value": "document"
+                        }
+                    },
+                    "output3": {
+                        "label": {
+                            "value": "DEP4"
+                        },
+                        "view_type": {
+                            "value": "document"
+                        }
+                    }
+                },
+                "settings": {
+                    "firstMatch": {
+                        "value": false
+                    },
+                    "routes": {
+                        "value": [
+                            {
+                                "expression": {
+                                    "expression": true,
+                                    "value": "$DEP_ID==1"
+                                },
+                                "outputViewName": {
+                                    "value": "DEP1"
+                                }
+                            },
+                            {
+                                "expression": {
+                                    "expression": true,
+                                    "value": "$DEP_ID==2"
+                                },
+                                "outputViewName": {
+                                    "value": "DEP2"
+                                }
+                            },
+                            {
+                                "expression": {
+                                    "expression": true,
+                                    "value": "$DEP_ID==3"
+                                },
+                                "outputViewName": {
+                                    "value": "DEP3"
+                                }
+                            },
+                            {
+                                "expression": {
+                                    "expression": true,
+                                    "value": "true"
+                                },
+                                "outputViewName": {
+                                    "value": "DEP4"
+                                }
+                            }
+                        ]
+                    }
+                },
+                "view_serial": 100
+            }
+        },
+        "11111111-1111-1111-1111-00000000001a": {
+            "class_build_tag": "snapsmrc500",
+            "class_fqid": "com-snaplogic-snaps-sqlserver-lookup_3-snapsmrc500",
+            "class_id": "com-snaplogic-snaps-sqlserver-lookup",
+            "class_version": 3,
+            "instance_fqid": "11111111-1111-1111-1111-00000000001a_2",
+            "instance_id": "11111111-1111-1111-1111-00000000001a",
+            "instance_version": 2,
+            "property_map": {
+                "account": {
+                    "account_ref": {
+                        "expression": false,
+                        "value": {
+                            "label": {
+                                "expression": false,
+                                "value": "GANESH_SQL"
+                            },
+                            "ref_class_id": {
+                                "value": "com-snaplogic-snap-api-sql-accounts-sqlserverdatabaseaccount"
+                            },
+                            "ref_id": {
+                                "expression": false,
+                                "value": "d3f4d914-d0d6-4ef3-b7b0-e00a82d3b080"
+                            }
+                        }
+                    }
+                },
+                "error": {
+                    "error0": {
+                        "label": {
+                            "value": "error0"
+                        },
+                        "view_type": {
+                            "value": "document"
+                        }
+                    },
+                    "error_behavior": {
+                        "value": "fail"
+                    }
+                },
+                "info": {
+                    "label": {
+                        "value": "Lookup Procedure"
+                    },
+                    "notes": {
+                        "value": null
+                    }
+                },
+                "input": {
+                    "input0": {
+                        "label": {
+                            "value": "input0"
+                        },
+                        "view_type": {
+                            "value": "document"
+                        }
+                    }
+                },
+                "output": {
+                    "output0": {
+                        "label": {
+                            "value": "output0"
+                        },
+                        "view_type": {
+                            "value": "document"
+                        }
+                    }
+                },
+                "settings": {
+                    "lookupConditions": {
+                        "value": [
+                            {
+                                "column": {
+                                    "expression": false,
+                                    "value": "\"DEP_ID\""
+                                },
+                                "value": {
+                                    "expression": true,
+                                    "value": "$DEP_ID"
+                                }
+                            },
+                            {
+                                "column": {
+                                    "expression": false,
+                                    "value": "\"STU_ID\""
+                                },
+                                "value": {
+                                    "expression": true,
+                                    "value": "$STU_ID"
+                                }
+                            }
+                        ]
+                    },
+                    "outputFields": {
+                        "value": [
+                            {
+                                "outputField": {
+                                    "expression": false,
+                                    "value": "\"DEPT_NAME\""
+                                }
+                            },
+                            {
+                                "outputField": {
+                                    "expression": false,
+                                    "value": "\"STAFF_ID\""
+                                }
+                            }
+                        ]
+                    },
+                    "passThrough": {
+                        "value": false
+                    },
+                    "schemaName": {
+                        "expression": false,
+                        "value": "dbo"
+                    },
+                    "tableName": {
+                        "expression": false,
+                        "value": "STUDENT_DEP"
+                    }
+                },
+                "view_serial": 100
+            }
+        },
+        "11111111-1111-1111-1111-00000000001b": {
+            "class_build_tag": "snapsmrc500",
+            "class_fqid": "com-snaplogic-snaps-sqlserver-lookup_3-snapsmrc500",
+            "class_id": "com-snaplogic-snaps-sqlserver-lookup",
+            "class_version": 3,
+            "instance_fqid": "11111111-1111-1111-1111-00000000001b_2",
+            "instance_id": "11111111-1111-1111-1111-00000000001b",
+            "instance_version": 2,
+            "property_map": {
+                "account": {
+                    "account_ref": {
+                        "expression": false,
+                        "value": {
+                            "label": {
+                                "expression": false,
+                                "value": "GANESH_SQL"
+                            },
+                            "ref_class_id": {
+                                "value": "com-snaplogic-snap-api-sql-accounts-sqlserverdatabaseaccount"
+                            },
+                            "ref_id": {
+                                "expression": false,
+                                "value": "d3f4d914-d0d6-4ef3-b7b0-e00a82d3b080"
+                            }
+                        }
+                    }
+                },
+                "error": {
+                    "error0": {
+                        "label": {
+                            "value": "error0"
+                        },
+                        "view_type": {
+                            "value": "document"
+                        }
+                    },
+                    "error_behavior": {
+                        "value": "fail"
+                    }
+                },
+                "info": {
+                    "label": {
+                        "value": "Lookup Procedure"
+                    },
+                    "notes": {
+                        "value": null
+                    }
+                },
+                "input": {
+                    "input0": {
+                        "label": {
+                            "value": "input0"
+                        },
+                        "view_type": {
+                            "value": "document"
+                        }
+                    }
+                },
+                "output": {
+                    "output0": {
+                        "label": {
+                            "value": "output0"
+                        },
+                        "view_type": {
+                            "value": "document"
+                        }
+                    }
+                },
+                "settings": {
+                    "lookupConditions": {
+                        "value": [
+                            {
+                                "column": {
+                                    "expression": false,
+                                    "value": "\"DEP_ID\""
+                                },
+                                "value": {
+                                    "expression": true,
+                                    "value": "$DEP_ID"
+                                }
+                            },
+                            {
+                                "column": {
+                                    "expression": false,
+                                    "value": "\"STU_ID\""
+                                },
+                                "value": {
+                                    "expression": true,
+                                    "value": "$STU_ID"
+                                }
+                            }
+                        ]
+                    },
+                    "outputFields": {
+                        "value": [
+                            {
+                                "outputField": {
+                                    "expression": false,
+                                    "value": "\"DEPT_NAME\""
+                                }
+                            },
+                            {
+                                "outputField": {
+                                    "expression": false,
+                                    "value": "\"STAFF_ID\""
+                                }
+                            }
+                        ]
+                    },
+                    "passThrough": {
+                        "value": false
+                    },
+                    "schemaName": {
+                        "expression": false,
+                        "value": "dbo"
+                    },
+                    "tableName": {
+                        "expression": false,
+                        "value": "STUDENT_DEP"
+                    }
+                },
+                "view_serial": 100
+            }
+        },
+        "11111111-1111-1111-1111-00000000001c": {
+            "class_build_tag": "snapsmrc500",
+            "class_fqid": "com-snaplogic-snaps-sqlserver-lookup_3-snapsmrc500",
+            "class_id": "com-snaplogic-snaps-sqlserver-lookup",
+            "class_version": 3,
+            "instance_fqid": "11111111-1111-1111-1111-00000000001c_2",
+            "instance_id": "11111111-1111-1111-1111-00000000001c",
+            "instance_version": 2,
+            "property_map": {
+                "account": {
+                    "account_ref": {
+                        "expression": false,
+                        "value": {
+                            "label": {
+                                "expression": false,
+                                "value": "GANESH_SQL"
+                            },
+                            "ref_class_id": {
+                                "value": "com-snaplogic-snap-api-sql-accounts-sqlserverdatabaseaccount"
+                            },
+                            "ref_id": {
+                                "expression": false,
+                                "value": "d3f4d914-d0d6-4ef3-b7b0-e00a82d3b080"
+                            }
+                        }
+                    }
+                },
+                "error": {
+                    "error0": {
+                        "label": {
+                            "value": "error0"
+                        },
+                        "view_type": {
+                            "value": "document"
+                        }
+                    },
+                    "error_behavior": {
+                        "value": "fail"
+                    }
+                },
+                "info": {
+                    "label": {
+                        "value": "Lookup Procedure"
+                    },
+                    "notes": {
+                        "value": null
+                    }
+                },
+                "input": {
+                    "input0": {
+                        "label": {
+                            "value": "input0"
+                        },
+                        "view_type": {
+                            "value": "document"
+                        }
+                    }
+                },
+                "output": {
+                    "output0": {
+                        "label": {
+                            "value": "output0"
+                        },
+                        "view_type": {
+                            "value": "document"
+                        }
+                    }
+                },
+                "settings": {
+                    "lookupConditions": {
+                        "value": [
+                            {
+                                "column": {
+                                    "expression": false,
+                                    "value": "\"DEP_ID\""
+                                },
+                                "value": {
+                                    "expression": true,
+                                    "value": "$DEP_ID"
+                                }
+                            },
+                            {
+                                "column": {
+                                    "expression": false,
+                                    "value": "\"STU_ID\""
+                                },
+                                "value": {
+                                    "expression": true,
+                                    "value": "$STU_ID"
+                                }
+                            }
+                        ]
+                    },
+                    "outputFields": {
+                        "value": [
+                            {
+                                "outputField": {
+                                    "expression": false,
+                                    "value": "\"DEP_ID\""
+                                }
+                            },
+                            {
+                                "outputField": {
+                                    "expression": false,
+                                    "value": "\"stu_id\""
+                                }
+                            },
+                            {
+                                "outputField": {
+                                    "expression": false,
+                                    "value": "\"DEPT_NAME\""
+                                }
+                            },
+                            {
+                                "outputField": {
+                                    "expression": false,
+                                    "value": "\"STAFF_ID\""
+                                }
+                            },
+                            {
+                                "outputField": {
+                                    "expression": false,
+                                    "value": "\"DEP_ID\""
+                                }
+                            },
+                            {
+                                "outputField": {
+                                    "expression": false,
+                                    "value": "\"stu_id\""
+                                }
+                            }
+                        ]
+                    },
+                    "passThrough": {
+                        "value": false
+                    },
+                    "schemaName": {
+                        "expression": false,
+                        "value": "dbo"
+                    },
+                    "tableName": {
+                        "expression": false,
+                        "value": "STUDENT_DEP"
+                    }
+                },
+                "view_serial": 100
+            }
+        },
+        "11111111-1111-1111-1111-00000000001d": {
+            "class_build_tag": "snapsmrc500",
+            "class_fqid": "com-snaplogic-snaps-sqlserver-lookup_3-snapsmrc500",
+            "class_id": "com-snaplogic-snaps-sqlserver-lookup",
+            "class_version": 3,
+            "instance_fqid": "11111111-1111-1111-1111-00000000001d_3",
+            "instance_id": "11111111-1111-1111-1111-00000000001d",
+            "instance_version": 3,
+            "property_map": {
+                "account": {
+                    "account_ref": {
+                        "expression": false,
+                        "value": {
+                            "label": {
+                                "expression": false,
+                                "value": "GANESH_SQL"
+                            },
+                            "ref_class_id": {
+                                "value": "com-snaplogic-snap-api-sql-accounts-sqlserverdatabaseaccount"
+                            },
+                            "ref_id": {
+                                "expression": false,
+                                "value": "d3f4d914-d0d6-4ef3-b7b0-e00a82d3b080"
+                            }
+                        }
+                    }
+                },
+                "error": {
+                    "error0": {
+                        "label": {
+                            "value": "error0"
+                        },
+                        "view_type": {
+                            "value": "document"
+                        }
+                    },
+                    "error_behavior": {
+                        "value": "fail"
+                    }
+                },
+                "info": {
+                    "label": {
+                        "value": "Lookup Procedure"
+                    },
+                    "notes": {
+                        "value": null
+                    }
+                },
+                "input": {
+                    "input0": {
+                        "label": {
+                            "value": "input0"
+                        },
+                        "view_type": {
+                            "value": "document"
+                        }
+                    }
+                },
+                "output": {
+                    "output0": {
+                        "label": {
+                            "value": "output0"
+                        },
+                        "view_type": {
+                            "value": "document"
+                        }
+                    }
+                },
+                "settings": {
+                    "lookupConditions": {
+                        "value": [
+                            {
+                                "column": {
+                                    "expression": false,
+                                    "value": "\"DEP_ID\""
+                                },
+                                "value": {
+                                    "expression": true,
+                                    "value": "$DEP_ID"
+                                }
+                            },
+                            {
+                                "column": {
+                                    "expression": false,
+                                    "value": "\"STU_ID\""
+                                },
+                                "value": {
+                                    "expression": true,
+                                    "value": "$STU_ID"
+                                }
+                            }
+                        ]
+                    },
+                    "outputFields": {
+                        "value": [
+                            {
+                                "outputField": {
+                                    "expression": false,
+                                    "value": "\"DEP_ID\""
+                                }
+                            },
+                            {
+                                "outputField": {
+                                    "expression": false,
+                                    "value": "\"stu_id\""
+                                }
+                            },
+                            {
+                                "outputField": {
+                                    "expression": false,
+                                    "value": "\"DEPT_NAME\""
+                                }
+                            },
+                            {
+                                "outputField": {
+                                    "expression": false,
+                                    "value": "\"STAFF_ID\""
+                                }
+                            },
+                            {
+                                "outputField": {
+                                    "expression": false,
+                                    "value": "\"DEP_ID\""
+                                }
+                            },
+                            {
+                                "outputField": {
+                                    "expression": false,
+                                    "value": "\"stu_id\""
+                                }
+                            }
+                        ]
+                    },
+                    "passThrough": {
+                        "value": true
+                    },
+                    "schemaName": {
+                        "expression": false,
+                        "value": "dbo"
+                    },
+                    "tableName": {
+                        "expression": false,
+                        "value": "STUDENT_DEP"
+                    }
+                },
+                "view_serial": 100
+            }
+        }
+    },
+    "class_version": 9,
+    "link_map": {
+        "link0": {
+            "dst_id": "11111111-1111-1111-1111-000000000019",
+            "dst_view_id": "input0",
+            "src_id": "11111111-1111-1111-1111-000000000011",
+            "src_view_id": "output0"
+        },
+        "link1": {
+            "dst_id": "11111111-1111-1111-1111-000000000018",
+            "dst_view_id": "input0",
+            "src_id": "11111111-1111-1111-1111-000000000019",
+            "src_view_id": "output0"
+        },
+        "link10": {
+            "dst_id": "11111111-1111-1111-1111-000000000014",
+            "dst_view_id": "input0",
+            "src_id": "11111111-1111-1111-1111-00000000001a",
+            "src_view_id": "output0"
+        },
+        "link11": {
+            "dst_id": "11111111-1111-1111-1111-000000000012",
+            "dst_view_id": "input0",
+            "src_id": "11111111-1111-1111-1111-00000000001b",
+            "src_view_id": "output0"
+        },
+        "link12": {
+            "dst_id": "11111111-1111-1111-1111-000000000010",
+            "dst_view_id": "input0",
+            "src_id": "11111111-1111-1111-1111-00000000001d",
+            "src_view_id": "output0"
+        },
+        "link13": {
+            "dst_id": "11111111-1111-1111-1111-000000000013",
+            "dst_view_id": "input0",
+            "src_id": "11111111-1111-1111-1111-000000000014",
+            "src_view_id": "output0"
+        },
+        "link2": {
+            "dst_id": "11111111-1111-1111-1111-000000000016",
+            "dst_view_id": "input0",
+            "src_id": "11111111-1111-1111-1111-000000000019",
+            "src_view_id": "output1"
+        },
+        "link3": {
+            "dst_id": "11111111-1111-1111-1111-000000000017",
+            "dst_view_id": "input0",
+            "src_id": "11111111-1111-1111-1111-000000000019",
+            "src_view_id": "output2"
+        },
+        "link4": {
+            "dst_id": "11111111-1111-1111-1111-000000000015",
+            "dst_view_id": "input0",
+            "src_id": "11111111-1111-1111-1111-000000000019",
+            "src_view_id": "output3"
+        },
+        "link5": {
+            "dst_id": "11111111-1111-1111-1111-00000000001c",
+            "dst_view_id": "input0",
+            "src_id": "11111111-1111-1111-1111-000000000018",
+            "src_view_id": "output0"
+        },
+        "link6": {
+            "dst_id": "11111111-1111-1111-1111-00000000001a",
+            "dst_view_id": "input0",
+            "src_id": "11111111-1111-1111-1111-000000000016",
+            "src_view_id": "output0"
+        },
+        "link7": {
+            "dst_id": "11111111-1111-1111-1111-00000000001b",
+            "dst_view_id": "input0",
+            "src_id": "11111111-1111-1111-1111-000000000017",
+            "src_view_id": "output0"
+        },
+        "link8": {
+            "dst_id": "11111111-1111-1111-1111-00000000001d",
+            "dst_view_id": "input0",
+            "src_id": "11111111-1111-1111-1111-000000000015",
+            "src_view_id": "output0"
+        },
+        "link9": {
+            "dst_id": "11111111-1111-1111-1111-00000000000f",
+            "dst_view_id": "input0",
+            "src_id": "11111111-1111-1111-1111-00000000001c",
+            "src_view_id": "output0"
+        }
+    },
+    "property_map": {
+        "error": {
+            "error0": {
+                "label": {
+                    "value": "error0"
+                },
+                "view_type": {
+                    "value": "document"
+                }
+            },
+            "error1": {
+                "label": {
+                    "value": "error1"
+                },
+                "view_type": {
+                    "value": "binary"
+                }
+            },
+            "error_behavior": {
+                "value": "none"
+            }
+        },
+        "info": {
+            "author": {
+                "value": "ganesh.elango@agilisium.com"
+            },
+            "label": {},
+            "notes": {},
+            "pipeline_doc_uri": {},
+            "purpose": {}
+        },
+        "input": {},
+        "output": {},
+        "settings": {
+            "error_param_table": {
+                "value": []
+            },
+            "error_pipeline": {
+                "expression": false
+            },
+            "imports": {
+                "value": []
+            },
+            "param_table": {
+                "value": []
+            }
+        }
+    },
+    "render_map": {
+        "default_snaplex": null,
+        "detail_map": {
+            "11111111-1111-1111-1111-00000000000f": {
+                "error": {},
+                "grid_x_int": 7,
+                "grid_y_int": 1,
+                "index": null,
+                "input": {},
+                "output": {},
+                "recommendation_id": null,
+                "rot_int": 0,
+                "rot_tail_int": 0,
+                "source": "snap category"
+            },
+            "11111111-1111-1111-1111-000000000010": {
+                "error": {},
+                "grid_x_int": 7,
+                "grid_y_int": 4,
+                "index": null,
+                "input": {},
+                "output": {},
+                "recommendation_id": null,
+                "rot_int": 0,
+                "rot_tail_int": 0,
+                "source": "snap category"
+            },
+            "11111111-1111-1111-1111-000000000011": {
+                "error": {},
+                "grid_x_int": 3,
+                "grid_y_int": 1,
+                "index": null,
+                "input": {},
+                "output": {},
+                "recommendation_id": null,
+                "rot_int": 0,
+                "rot_tail_int": 0,
+                "source": "snap category"
+            },
+            "11111111-1111-1111-1111-000000000012": {
+                "error": {},
+                "grid_x_int": 7,
+                "grid_y_int": 3,
+                "index": null,
+                "input": {},
+                "output": {},
+                "recommendation_id": null,
+                "rot_int": 0,
+                "rot_tail_int": 0,
+                "source": "snap category"
+            },
+            "11111111-1111-1111-1111-000000000013": {
+                "error": {},
+                "grid_x_int": 8,
+                "grid_y_int": 2,
+                "index": null,
+                "input": {},
+                "output": {},
+                "recommendation_id": null,
+                "rot_int": 0,
+                "rot_tail_int": 0,
+                "source": "snap category"
+            },
+            "11111111-1111-1111-1111-000000000014": {
+                "error": {},
+                "grid_x_int": 7,
+                "grid_y_int": 2,
+                "index": null,
+                "input": {},
+                "output": {},
+                "recommendation_id": null,
+                "rot_int": 0,
+                "rot_tail_int": 0,
+                "source": "snap category"
+            },
+            "11111111-1111-1111-1111-000000000015": {
+                "error": {},
+                "grid_x_int": 5,
+                "grid_y_int": 4,
+                "index": null,
+                "input": {},
+                "output": {},
+                "recommendation_id": null,
+                "rot_int": 0,
+                "rot_tail_int": 0,
+                "source": "snap category"
+            },
+            "11111111-1111-1111-1111-000000000016": {
+                "error": {},
+                "grid_x_int": 5,
+                "grid_y_int": 2,
+                "index": null,
+                "input": {},
+                "output": {},
+                "recommendation_id": null,
+                "rot_int": 0,
+                "rot_tail_int": 0,
+                "source": "snap category"
+            },
+            "11111111-1111-1111-1111-000000000017": {
+                "error": {},
+                "grid_x_int": 5,
+                "grid_y_int": 3,
+                "index": null,
+                "input": {},
+                "output": {},
+                "recommendation_id": null,
+                "rot_int": 0,
+                "rot_tail_int": 0,
+                "source": "snap category"
+            },
+            "11111111-1111-1111-1111-000000000018": {
+                "error": {},
+                "grid_x_int": 5,
+                "grid_y_int": 1,
+                "index": null,
+                "input": {},
+                "output": {},
+                "recommendation_id": null,
+                "rot_int": 0,
+                "rot_tail_int": 0,
+                "source": "snap category"
+            },
+            "11111111-1111-1111-1111-000000000019": {
+                "error": {},
+                "grid_x_int": 4,
+                "grid_y_int": 1,
+                "index": null,
+                "input": {},
+                "output": {
+                    "output1": {
+                        "dx_int": 0,
+                        "dy_int": 1,
+                        "rot_int": 0
+                    },
+                    "output2": {
+                        "dx_int": 0,
+                        "dy_int": 2,
+                        "rot_int": 0
+                    },
+                    "output3": {
+                        "dx_int": 0,
+                        "dy_int": 3,
+                        "rot_int": 0
+                    }
+                },
+                "recommendation_id": null,
+                "rot_int": 0,
+                "rot_tail_int": 0,
+                "source": "snap category"
+            },
+            "11111111-1111-1111-1111-00000000001a": {
+                "error": {},
+                "grid_x_int": 6,
+                "grid_y_int": 2,
+                "index": null,
+                "input": {},
+                "output": {},
+                "recommendation_id": null,
+                "rot_int": 0,
+                "rot_tail_int": 0,
+                "source": "snap category"
+            },
+            "11111111-1111-1111-1111-00000000001b": {
+                "error": {},
+                "grid_x_int": 6,
+                "grid_y_int": 3,
+                "index": null,
+                "input": {},
+                "output": {},
+                "recommendation_id": null,
+                "rot_int": 0,
+                "rot_tail_int": 0,
+                "source": "snap category"
+            },
+            "11111111-1111-1111-1111-00000000001c": {
+                "error": {},
+                "grid_x_int": 6,
+                "grid_y_int": 1,
+                "index": null,
+                "input": {},
+                "output": {},
+                "recommendation_id": null,
+                "rot_int": 0,
+                "rot_tail_int": 0,
+                "source": "snap category"
+            },
+            "11111111-1111-1111-1111-00000000001d": {
+                "error": {},
+                "grid_x_int": 6,
+                "grid_y_int": 4,
+                "index": null,
+                "input": {},
+                "output": {},
+                "recommendation_id": null,
+                "rot_int": 0,
+                "rot_tail_int": 0,
+                "source": "snap category"
+            }
+        },
+        "pan_x_num": 0,
+        "pan_y_num": 0,
+        "scale_ratio": 1
+    },
+    "snap_map": {
+        "11111111-1111-1111-1111-00000000000f": {
+            "class_id": "com-snaplogic-snaps-sqlserver-insert",
+            "class_version": 1,
+            "instance_id": "11111111-1111-1111-1111-00000000000f",
+            "property_map": {
+                "account": {
+                    "account_ref": {
+                        "expression": false,
+                        "value": {
+                            "label": {
+                                "expression": false,
+                                "value": "GANESH_SQL"
+                            },
+                            "ref_class_id": {
+                                "value": "com-snaplogic-snap-api-sql-accounts-sqlserverdatabaseaccount"
+                            },
+                            "ref_id": {
+                                "expression": false,
+                                "value": null
+                            }
+                        }
+                    }
+                },
+                "error": {
+                    "error0": {
+                        "label": {
+                            "value": "error0"
+                        },
+                        "view_type": {
+                            "value": "document"
+                        }
+                    },
+                    "error_behavior": {
+                        "value": "fail"
+                    }
+                },
+                "info": {
+                    "label": {
+                        "value": "Microsoft SQL Server"
+                    },
+                    "notes": {
+                        "value": null
+                    }
+                },
+                "input": {
+                    "input0": {
+                        "label": {
+                            "value": "input0"
+                        },
+                        "view_type": {
+                            "value": "document"
+                        }
+                    }
+                },
+                "settings": {
+                    "createTable": {
+                        "value": false
+                    },
+                    "executable_during_suggest": {
+                        "value": false
+                    },
+                    "execution_mode": {
+                        "value": "Execute only"
+                    },
+                    "preserveCaseSensistiveness": {
+                        "value": false
+                    },
+                    "schemaName": {
+                        "expression": false,
+                        "value": "dbo"
+                    },
+                    "tableName": {
+                        "expression": false,
+                        "value": "Student_news"
+                    }
+                },
+                "view_serial": 100
+            }
+        },
+        "11111111-1111-1111-1111-000000000010": {
+            "class_id": "com-snaplogic-snaps-sqlserver-insert",
+            "class_version": 1,
+            "instance_id": "11111111-1111-1111-1111-000000000010",
+            "property_map": {
+                "account": {
+                    "account_ref": {
+                        "expression": false,
+                        "value": {
+                            "label": {
+                                "expression": false,
+                                "value": "GANESH_SQL"
+                            },
+                            "ref_class_id": {
+                                "value": "com-snaplogic-snap-api-sql-accounts-sqlserverdatabaseaccount"
+                            },
+                            "ref_id": {
+                                "expression": false,
+                                "value": null
+                            }
+                        }
+                    }
+                },
+                "error": {
+                    "error0": {
+                        "label": {
+                            "value": "error0"
+                        },
+                        "view_type": {
+                            "value": "document"
+                        }
+                    },
+                    "error_behavior": {
+                        "value": "fail"
+                    }
+                },
+                "info": {
+                    "label": {
+                        "value": "Microsoft SQL Server"
+                    },
+                    "notes": {
+                        "value": null
+                    }
+                },
+                "input": {
+                    "input0": {
+                        "label": {
+                            "value": "input0"
+                        },
+                        "view_type": {
+                            "value": "document"
+                        }
+                    }
+                },
+                "settings": {
+                    "createTable": {
+                        "value": false
+                    },
+                    "executable_during_suggest": {
+                        "value": false
+                    },
+                    "execution_mode": {
+                        "value": "Execute only"
+                    },
+                    "preserveCaseSensistiveness": {
+                        "value": false
+                    },
+                    "schemaName": {
+                        "expression": false,
+                        "value": "dbo"
+                    },
+                    "tableName": {
+                        "expression": false,
+                        "value": "Student_news"
+                    }
+                },
+                "view_serial": 100
+            }
+        },
+        "11111111-1111-1111-1111-000000000011": {
+            "class_id": "com-snaplogic-snaps-sqlserver-select",
+            "class_version": 3,
+            "instance_id": "11111111-1111-1111-1111-000000000011",
+            "property_map": {
+                "account": {
+                    "account_ref": {
+                        "expression": false,
+                        "value": {
+                            "label": {
+                                "expression": false,
+                                "value": "GANESH_SQL"
+                            },
+                            "ref_class_id": {
+                                "value": "com-snaplogic-snap-api-sql-accounts-sqlserverdatabaseaccount"
+                            },
+                            "ref_id": {
+                                "expression": false,
+                                "value": null
+                            }
+                        }
+                    }
+                },
+                "error": {
+                    "error0": {
+                        "label": {
+                            "value": "error0"
+                        },
+                        "view_type": {
+                            "value": "document"
+                        }
+                    },
+                    "error_behavior": {
+                        "value": "fail"
+                    }
+                },
+                "info": {
+                    "label": {
+                        "value": "Microsoft SQL Server"
+                    },
+                    "notes": {
+                        "value": null
+                    }
+                },
+                "output": {
+                    "output0": {
+                        "label": {
+                            "value": "output0"
+                        },
+                        "view_type": {
+                            "value": "document"
+                        }
+                    }
+                },
+                "settings": {
+                    "autoCommit": {
+                        "value": "False"
+                    },
+                    "autocommit": {
+                        "value": false
+                    },
+                    "ignoreEmptyResult": {
+                        "value": false
+                    },
+                    "limitOffset": {
+                        "expression": false,
+                        "value": null
+                    },
+                    "limitRows": {
+                        "expression": false,
+                        "value": null
+                    },
+                    "matchDataTypes": {
+                        "value": false
+                    },
+                    "orderBy": {
+                        "value": []
+                    },
+                    "outputFields": {
+                        "value": []
+                    },
+                    "passThrough": {
+                        "value": true
+                    },
+                    "schemaName": {
+                        "expression": false,
+                        "value": "dbo"
+                    },
+                    "tableName": {
+                        "expression": false,
+                        "value": "STUDENT_INFOMATION"
+                    },
+                    "whereClause": {
+                        "expression": false,
+                        "value": null
+                    }
+                },
+                "view_serial": 100
+            }
+        },
+        "11111111-1111-1111-1111-000000000012": {
+            "class_id": "com-snaplogic-snaps-sqlserver-delete",
+            "class_version": 1,
+            "instance_id": "11111111-1111-1111-1111-000000000012",
+            "property_map": {
+                "account": {
+                    "account_ref": {
+                        "expression": false,
+                        "value": {
+                            "label": {
+                                "expression": false,
+                                "value": "GANESH_SQL"
+                            },
+                            "ref_class_id": {
+                                "value": "com-snaplogic-snap-api-sql-accounts-sqlserverdatabaseaccount"
+                            },
+                            "ref_id": {
+                                "expression": false,
+                                "value": null
+                            }
+                        }
+                    }
+                },
+                "error": {
+                    "error0": {
+                        "label": {
+                            "value": "error0"
+                        },
+                        "view_type": {
+                            "value": "document"
+                        }
+                    },
+                    "error_behavior": {
+                        "value": "fail"
+                    }
+                },
+                "info": {
+                    "label": {
+                        "value": "SQL Server - Delete"
+                    },
+                    "notes": {
+                        "value": null
+                    }
+                },
+                "input": {
+                    "input0": {
+                        "label": {
+                            "value": "input0"
+                        },
+                        "view_type": {
+                            "value": "document"
+                        }
+                    }
+                },
+                "settings": {
+                    "deleteCondition": {
+                        "expression": false,
+                        "value": "DEP_ID=$DEP_ID"
+                    },
+                    "executable_during_suggest": {
+                        "value": false
+                    },
+                    "execution_mode": {
+                        "value": "Execute only"
+                    },
+                    "schemaName": {
+                        "expression": false,
+                        "value": "dbo"
+                    },
+                    "tableName": {
+                        "expression": false,
+                        "value": "STUDENT_NEWS"
+                    }
+                },
+                "view_serial": 100
+            }
+        },
+        "11111111-1111-1111-1111-000000000013": {
+            "class_id": "com-snaplogic-snaps-sqlserver-update",
+            "class_version": 1,
+            "instance_id": "11111111-1111-1111-1111-000000000013",
+            "property_map": {
+                "account": {
+                    "account_ref": {
+                        "expression": false,
+                        "value": {
+                            "label": {
+                                "expression": false,
+                                "value": "GANESH_SQL"
+                            },
+                            "ref_class_id": {
+                                "value": "com-snaplogic-snap-api-sql-accounts-sqlserverdatabaseaccount"
+                            },
+                            "ref_id": {
+                                "expression": false,
+                                "value": null
+                            }
+                        }
+                    }
+                },
+                "error": {
+                    "error0": {
+                        "label": {
+                            "value": "error0"
+                        },
+                        "view_type": {
+                            "value": "document"
+                        }
+                    },
+                    "error_behavior": {
+                        "value": "fail"
+                    }
+                },
+                "info": {
+                    "label": {
+                        "value": "Update Strategy"
+                    },
+                    "notes": {
+                        "value": null
+                    }
+                },
+                "input": {
+                    "input0": {
+                        "label": {
+                            "value": "input0"
+                        },
+                        "view_type": {
+                            "value": "document"
+                        }
+                    }
+                },
+                "settings": {
+                    "executable_during_suggest": {
+                        "value": false
+                    },
+                    "execution_mode": {
+                        "value": "Execute only"
+                    },
+                    "schemaName": {
+                        "expression": false,
+                        "value": "dbo"
+                    },
+                    "tableName": {
+                        "expression": false,
+                        "value": "student_news"
+                    },
+                    "updateCondition": {
+                        "expression": false,
+                        "value": "DEPT_NAME"
+                    }
+                },
+                "view_serial": 100
+            }
+        },
+        "11111111-1111-1111-1111-000000000014": {
+            "class_id": "com-snaplogic-snaps-transform-datatransform",
+            "class_version": 4,
+            "instance_id": "11111111-1111-1111-1111-000000000014",
+            "property_map": {
+                "account": {},
+                "error": {
+                    "error0": {
+                        "label": {
+                            "value": "error0"
+                        },
+                        "view_type": {
+                            "value": "document"
+                        }
+                    },
+                    "error_behavior": {
+                        "value": "fail"
+                    }
+                },
+                "info": {
+                    "label": {
+                        "value": "Expression"
+                    },
+                    "notes": {
+                        "value": null
+                    }
+                },
+                "input": {
+                    "input0": {
+                        "label": {
+                            "value": "input0"
+                        },
+                        "view_type": {
+                            "value": "document"
+                        }
+                    }
+                },
+                "output": {
+                    "output0": {
+                        "label": {
+                            "value": "output0"
+                        },
+                        "view_type": {
+                            "value": "document"
+                        }
+                    }
+                },
+                "settings": {
+                    "nullSafeAccess": {
+                        "value": false
+                    },
+                    "passThrough": {
+                        "value": false
+                    },
+                    "transformations": {
+                        "value": {
+                            "mappingRoot": {
+                                "value": "$"
+                            },
+                            "mappingTable": {
+                                "value": [
+                                    {
+                                        "expression": {
+                                            "expression": true,
+                                            "value": "$DEPT_NAME"
+                                        },
+                                        "targetPath": {
+                                            "value": "$DEPT_NAME"
+                                        }
+                                    },
+                                    {
+                                        "expression": {
+                                            "expression": true,
+                                            "value": "$STAFF_ID"
+                                        },
+                                        "targetPath": {
+                                            "value": "$STAFF_ID"
+                                        }
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                },
+                "view_serial": 100
+            }
+        },
+        "11111111-1111-1111-1111-000000000015": {
+            "class_id": "com-snaplogic-snaps-transform-datatransform",
+            "class_version": 4,
+            "instance_id": "11111111-1111-1111-1111-000000000015",
+            "property_map": {
+                "account": {},
+                "error": {
+                    "error0": {
+                        "label": {
+                            "value": "error0"
+                        },
+                        "view_type": {
+                            "value": "document"
+                        }
+                    },
+                    "error_behavior": {
+                        "value": "fail"
+                    }
+                },
+                "info": {
+                    "label": {
+                        "value": "Expression"
+                    },
+                    "notes": {
+                        "value": null
+                    }
+                },
+                "input": {
+                    "input0": {
+                        "label": {
+                            "value": "input0"
+                        },
+                        "view_type": {
+                            "value": "document"
+                        }
+                    }
+                },
+                "output": {
+                    "output0": {
+                        "label": {
+                            "value": "output0"
+                        },
+                        "view_type": {
+                            "value": "document"
+                        }
+                    }
+                },
+                "settings": {
+                    "nullSafeAccess": {
+                        "value": false
+                    },
+                    "passThrough": {
+                        "value": false
+                    },
+                    "transformations": {
+                        "value": {
+                            "mappingRoot": {
+                                "value": "$"
+                            },
+                            "mappingTable": {
+                                "value": [
+                                    {
+                                        "expression": {
+                                            "expression": true,
+                                            "value": "$DEP_ID"
+                                        },
+                                        "targetPath": {
+                                            "value": "$DEP_ID"
+                                        }
+                                    },
+                                    {
+                                        "expression": {
+                                            "expression": true,
+                                            "value": "$STU_ID"
+                                        },
+                                        "targetPath": {
+                                            "value": "$STU_ID"
+                                        }
+                                    },
+                                    {
+                                        "expression": {
+                                            "expression": true,
+                                            "value": "$NAME"
+                                        },
+                                        "targetPath": {
+                                            "value": "$NAME"
+                                        }
+                                    },
+                                    {
+                                        "expression": {
+                                            "expression": true,
+                                            "value": "$PERCENTAGE"
+                                        },
+                                        "targetPath": {
+                                            "value": "$PERCENTAGE"
+                                        }
+                                    },
+                                    {
+                                        "expression": {
+                                            "expression": true,
+                                            "value": "$ROLL_NUMBER"
+                                        },
+                                        "targetPath": {
+                                            "value": "$ROLL_NUMBER"
+                                        }
+                                    },
+                                    {
+                                        "expression": {
+                                            "expression": true,
+                                            "value": "$YEARS"
+                                        },
+                                        "targetPath": {
+                                            "value": "$YEARS"
+                                        }
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                },
+                "view_serial": 100
+            }
+        },
+        "11111111-1111-1111-1111-000000000016": {
+            "class_id": "com-snaplogic-snaps-transform-datatransform",
+            "class_version": 4,
+            "instance_id": "11111111-1111-1111-1111-000000000016",
+            "property_map": {
+                "account": {},
+                "error": {
+                    "error0": {
+                        "label": {
+                            "value": "error0"
+                        },
+                        "view_type": {
+                            "value": "document"
+                        }
+                    },
+                    "error_behavior": {
+                        "value": "fail"
+                    }
+                },
+                "info": {
+                    "label": {
+                        "value": "Expression"
+                    },
+                    "notes": {
+                        "value": null
+                    }
+                },
+                "input": {
+                    "input0": {
+                        "label": {
+                            "value": "input0"
+                        },
+                        "view_type": {
+                            "value": "document"
+                        }
+                    }
+                },
+                "output": {
+                    "output0": {
+                        "label": {
+                            "value": "output0"
+                        },
+                        "view_type": {
+                            "value": "document"
+                        }
+                    }
+                },
+                "settings": {
+                    "nullSafeAccess": {
+                        "value": false
+                    },
+                    "passThrough": {
+                        "value": false
+                    },
+                    "transformations": {
+                        "value": {
+                            "mappingRoot": {
+                                "value": "$"
+                            },
+                            "mappingTable": {
+                                "value": [
+                                    {
+                                        "expression": {
+                                            "expression": true,
+                                            "value": "$DEP_ID"
+                                        },
+                                        "targetPath": {
+                                            "value": "$DEP_ID"
+                                        }
+                                    },
+                                    {
+                                        "expression": {
+                                            "expression": true,
+                                            "value": "$STU_ID"
+                                        },
+                                        "targetPath": {
+                                            "value": "$STU_ID"
+                                        }
+                                    },
+                                    {
+                                        "expression": {
+                                            "expression": true,
+                                            "value": "$NAME"
+                                        },
+                                        "targetPath": {
+                                            "value": "$NAME"
+                                        }
+                                    },
+                                    {
+                                        "expression": {
+                                            "expression": true,
+                                            "value": "$PERCENTAGE"
+                                        },
+                                        "targetPath": {
+                                            "value": "$PERCENTAGE"
+                                        }
+                                    },
+                                    {
+                                        "expression": {
+                                            "expression": true,
+                                            "value": "$ROLL_NUMBER"
+                                        },
+                                        "targetPath": {
+                                            "value": "$ROLL_NUMBER"
+                                        }
+                                    },
+                                    {
+                                        "expression": {
+                                            "expression": true,
+                                            "value": "$YEARS"
+                                        },
+                                        "targetPath": {
+                                            "value": "$YEARS"
+                                        }
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                },
+                "view_serial": 100
+            }
+        },
+        "11111111-1111-1111-1111-000000000017": {
+            "class_id": "com-snaplogic-snaps-transform-datatransform",
+            "class_version": 4,
+            "instance_id": "11111111-1111-1111-1111-000000000017",
+            "property_map": {
+                "account": {},
+                "error": {
+                    "error0": {
+                        "label": {
+                            "value": "error0"
+                        },
+                        "view_type": {
+                            "value": "document"
+                        }
+                    },
+                    "error_behavior": {
+                        "value": "fail"
+                    }
+                },
+                "info": {
+                    "label": {
+                        "value": "Expression"
+                    },
+                    "notes": {
+                        "value": null
+                    }
+                },
+                "input": {
+                    "input0": {
+                        "label": {
+                            "value": "input0"
+                        },
+                        "view_type": {
+                            "value": "document"
+                        }
+                    }
+                },
+                "output": {
+                    "output0": {
+                        "label": {
+                            "value": "output0"
+                        },
+                        "view_type": {
+                            "value": "document"
+                        }
+                    }
+                },
+                "settings": {
+                    "nullSafeAccess": {
+                        "value": false
+                    },
+                    "passThrough": {
+                        "value": false
+                    },
+                    "transformations": {
+                        "value": {
+                            "mappingRoot": {
+                                "value": "$"
+                            },
+                            "mappingTable": {
+                                "value": [
+                                    {
+                                        "expression": {
+                                            "expression": true,
+                                            "value": "$DEP_ID"
+                                        },
+                                        "targetPath": {
+                                            "value": "$DEP_ID"
+                                        }
+                                    },
+                                    {
+                                        "expression": {
+                                            "expression": true,
+                                            "value": "$STU_ID"
+                                        },
+                                        "targetPath": {
+                                            "value": "$STU_ID"
+                                        }
+                                    },
+                                    {
+                                        "expression": {
+                                            "expression": true,
+                                            "value": "$NAME"
+                                        },
+                                        "targetPath": {
+                                            "value": "$NAME"
+                                        }
+                                    },
+                                    {
+                                        "expression": {
+                                            "expression": true,
+                                            "value": "$PERCENTAGE"
+                                        },
+                                        "targetPath": {
+                                            "value": "$PERCENTAGE"
+                                        }
+                                    },
+                                    {
+                                        "expression": {
+                                            "expression": true,
+                                            "value": "$ROLL_NUMBER"
+                                        },
+                                        "targetPath": {
+                                            "value": "$ROLL_NUMBER"
+                                        }
+                                    },
+                                    {
+                                        "expression": {
+                                            "expression": true,
+                                            "value": "$YEARS"
+                                        },
+                                        "targetPath": {
+                                            "value": "$YEARS"
+                                        }
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                },
+                "view_serial": 100
+            }
+        },
+        "11111111-1111-1111-1111-000000000018": {
+            "class_id": "com-snaplogic-snaps-transform-datatransform",
+            "class_version": 4,
+            "instance_id": "11111111-1111-1111-1111-000000000018",
+            "property_map": {
+                "account": {},
+                "error": {
+                    "error0": {
+                        "label": {
+                            "value": "error0"
+                        },
+                        "view_type": {
+                            "value": "document"
+                        }
+                    },
+                    "error_behavior": {
+                        "value": "fail"
+                    }
+                },
+                "info": {
+                    "label": {
+                        "value": "Expression"
+                    },
+                    "notes": {
+                        "value": null
+                    }
+                },
+                "input": {
+                    "input0": {
+                        "label": {
+                            "value": "input0"
+                        },
+                        "view_type": {
+                            "value": "document"
+                        }
+                    }
+                },
+                "output": {
+                    "output0": {
+                        "label": {
+                            "value": "output0"
+                        },
+                        "view_type": {
+                            "value": "document"
+                        }
+                    }
+                },
+                "settings": {
+                    "nullSafeAccess": {
+                        "value": false
+                    },
+                    "passThrough": {
+                        "value": false
+                    },
+                    "transformations": {
+                        "value": {
+                            "mappingRoot": {
+                                "value": "$"
+                            },
+                            "mappingTable": {
+                                "value": [
+                                    {
+                                        "expression": {
+                                            "expression": true,
+                                            "value": "$DEP_ID"
+                                        },
+                                        "targetPath": {
+                                            "value": "$DEP_ID"
+                                        }
+                                    },
+                                    {
+                                        "expression": {
+                                            "expression": true,
+                                            "value": "$STU_ID"
+                                        },
+                                        "targetPath": {
+                                            "value": "$STU_ID"
+                                        }
+                                    },
+                                    {
+                                        "expression": {
+                                            "expression": true,
+                                            "value": "$NAME"
+                                        },
+                                        "targetPath": {
+                                            "value": "$NAME"
+                                        }
+                                    },
+                                    {
+                                        "expression": {
+                                            "expression": true,
+                                            "value": "$PERCENTAGE"
+                                        },
+                                        "targetPath": {
+                                            "value": "$PERCENTAGE"
+                                        }
+                                    },
+                                    {
+                                        "expression": {
+                                            "expression": true,
+                                            "value": "$ROLL_NUMBER"
+                                        },
+                                        "targetPath": {
+                                            "value": "$ROLL_NUMBER"
+                                        }
+                                    },
+                                    {
+                                        "expression": {
+                                            "expression": true,
+                                            "value": "$YEARS"
+                                        },
+                                        "targetPath": {
+                                            "value": "$YEARS"
+                                        }
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                },
+                "view_serial": 100
+            }
+        },
+        "11111111-1111-1111-1111-000000000019": {
+            "class_id": "com-snaplogic-snaps-flow-router",
+            "class_version": 2,
+            "instance_id": "11111111-1111-1111-1111-000000000019",
+            "property_map": {
+                "account": {},
+                "error": {
+                    "error0": {
+                        "label": {
+                            "value": "error0"
+                        },
+                        "view_type": {
+                            "value": "document"
+                        }
+                    },
+                    "error_behavior": {
+                        "value": "fail"
+                    }
+                },
+                "info": {
+                    "label": {
+                        "value": "Router"
+                    },
+                    "notes": {
+                        "value": null
+                    }
+                },
+                "input": {
+                    "input0": {
+                        "label": {
+                            "value": "input0"
+                        },
+                        "view_type": {
+                            "value": "document"
+                        }
+                    }
+                },
+                "output": {
+                    "output0": {
+                        "label": {
+                            "value": "DEP1"
+                        },
+                        "view_type": {
+                            "value": "document"
+                        }
+                    },
+                    "output1": {
+                        "label": {
+                            "value": "DEP2"
+                        },
+                        "view_type": {
+                            "value": "document"
+                        }
+                    },
+                    "output2": {
+                        "label": {
+                            "value": "DEP3"
+                        },
+                        "view_type": {
+                            "value": "document"
+                        }
+                    },
+                    "output3": {
+                        "label": {
+                            "value": "DEP4"
+                        },
+                        "view_type": {
+                            "value": "document"
+                        }
+                    }
+                },
+                "settings": {
+                    "firstMatch": {
+                        "value": false
+                    },
+                    "routes": {
+                        "value": [
+                            {
+                                "expression": {
+                                    "expression": true,
+                                    "value": "$DEP_ID==1"
+                                },
+                                "outputViewName": {
+                                    "value": "DEP1"
+                                }
+                            },
+                            {
+                                "expression": {
+                                    "expression": true,
+                                    "value": "$DEP_ID==2"
+                                },
+                                "outputViewName": {
+                                    "value": "DEP2"
+                                }
+                            },
+                            {
+                                "expression": {
+                                    "expression": true,
+                                    "value": "$DEP_ID==3"
+                                },
+                                "outputViewName": {
+                                    "value": "DEP3"
+                                }
+                            },
+                            {
+                                "expression": {
+                                    "expression": true,
+                                    "value": "true"
+                                },
+                                "outputViewName": {
+                                    "value": "DEP4"
+                                }
+                            }
+                        ]
+                    }
+                },
+                "view_serial": 100
+            }
+        },
+        "11111111-1111-1111-1111-00000000001a": {
+            "class_id": "com-snaplogic-snaps-sqlserver-lookup",
+            "class_version": 3,
+            "instance_id": "11111111-1111-1111-1111-00000000001a",
+            "property_map": {
+                "account": {
+                    "account_ref": {
+                        "expression": false,
+                        "value": {
+                            "label": {
+                                "expression": false,
+                                "value": "GANESH_SQL"
+                            },
+                            "ref_class_id": {
+                                "value": "com-snaplogic-snap-api-sql-accounts-sqlserverdatabaseaccount"
+                            },
+                            "ref_id": {
+                                "expression": false,
+                                "value": null
+                            }
+                        }
+                    }
+                },
+                "error": {
+                    "error0": {
+                        "label": {
+                            "value": "error0"
+                        },
+                        "view_type": {
+                            "value": "document"
+                        }
+                    },
+                    "error_behavior": {
+                        "value": "fail"
+                    }
+                },
+                "info": {
+                    "label": {
+                        "value": "Lookup Procedure"
+                    },
+                    "notes": {
+                        "value": null
+                    }
+                },
+                "input": {
+                    "input0": {
+                        "label": {
+                            "value": "input0"
+                        },
+                        "view_type": {
+                            "value": "document"
+                        }
+                    }
+                },
+                "output": {
+                    "output0": {
+                        "label": {
+                            "value": "output0"
+                        },
+                        "view_type": {
+                            "value": "document"
+                        }
+                    }
+                },
+                "settings": {
+                    "lookupConditions": {
+                        "value": [
+                            {
+                                "column": {
+                                    "expression": false,
+                                    "value": "\"DEP_ID\""
+                                },
+                                "value": {
+                                    "expression": true,
+                                    "value": "$DEP_ID"
+                                }
+                            },
+                            {
+                                "column": {
+                                    "expression": false,
+                                    "value": "\"STU_ID\""
+                                },
+                                "value": {
+                                    "expression": true,
+                                    "value": "$STU_ID"
+                                }
+                            }
+                        ]
+                    },
+                    "outputFields": {
+                        "value": [
+                            {
+                                "outputField": {
+                                    "expression": false,
+                                    "value": "\"DEPT_NAME\""
+                                }
+                            },
+                            {
+                                "outputField": {
+                                    "expression": false,
+                                    "value": "\"STAFF_ID\""
+                                }
+                            }
+                        ]
+                    },
+                    "passThrough": {
+                        "value": false
+                    },
+                    "schemaName": {
+                        "expression": false,
+                        "value": "dbo"
+                    },
+                    "tableName": {
+                        "expression": false,
+                        "value": "STUDENT_DEP"
+                    }
+                },
+                "view_serial": 100
+            }
+        },
+        "11111111-1111-1111-1111-00000000001b": {
+            "class_id": "com-snaplogic-snaps-sqlserver-lookup",
+            "class_version": 3,
+            "instance_id": "11111111-1111-1111-1111-00000000001b",
+            "property_map": {
+                "account": {
+                    "account_ref": {
+                        "expression": false,
+                        "value": {
+                            "label": {
+                                "expression": false,
+                                "value": "GANESH_SQL"
+                            },
+                            "ref_class_id": {
+                                "value": "com-snaplogic-snap-api-sql-accounts-sqlserverdatabaseaccount"
+                            },
+                            "ref_id": {
+                                "expression": false,
+                                "value": null
+                            }
+                        }
+                    }
+                },
+                "error": {
+                    "error0": {
+                        "label": {
+                            "value": "error0"
+                        },
+                        "view_type": {
+                            "value": "document"
+                        }
+                    },
+                    "error_behavior": {
+                        "value": "fail"
+                    }
+                },
+                "info": {
+                    "label": {
+                        "value": "Lookup Procedure"
+                    },
+                    "notes": {
+                        "value": null
+                    }
+                },
+                "input": {
+                    "input0": {
+                        "label": {
+                            "value": "input0"
+                        },
+                        "view_type": {
+                            "value": "document"
+                        }
+                    }
+                },
+                "output": {
+                    "output0": {
+                        "label": {
+                            "value": "output0"
+                        },
+                        "view_type": {
+                            "value": "document"
+                        }
+                    }
+                },
+                "settings": {
+                    "lookupConditions": {
+                        "value": [
+                            {
+                                "column": {
+                                    "expression": false,
+                                    "value": "\"DEP_ID\""
+                                },
+                                "value": {
+                                    "expression": true,
+                                    "value": "$DEP_ID"
+                                }
+                            },
+                            {
+                                "column": {
+                                    "expression": false,
+                                    "value": "\"STU_ID\""
+                                },
+                                "value": {
+                                    "expression": true,
+                                    "value": "$STU_ID"
+                                }
+                            }
+                        ]
+                    },
+                    "outputFields": {
+                        "value": [
+                            {
+                                "outputField": {
+                                    "expression": false,
+                                    "value": "\"DEPT_NAME\""
+                                }
+                            },
+                            {
+                                "outputField": {
+                                    "expression": false,
+                                    "value": "\"STAFF_ID\""
+                                }
+                            }
+                        ]
+                    },
+                    "passThrough": {
+                        "value": false
+                    },
+                    "schemaName": {
+                        "expression": false,
+                        "value": "dbo"
+                    },
+                    "tableName": {
+                        "expression": false,
+                        "value": "STUDENT_DEP"
+                    }
+                },
+                "view_serial": 100
+            }
+        },
+        "11111111-1111-1111-1111-00000000001c": {
+            "class_id": "com-snaplogic-snaps-sqlserver-lookup",
+            "class_version": 3,
+            "instance_id": "11111111-1111-1111-1111-00000000001c",
+            "property_map": {
+                "account": {
+                    "account_ref": {
+                        "expression": false,
+                        "value": {
+                            "label": {
+                                "expression": false,
+                                "value": "GANESH_SQL"
+                            },
+                            "ref_class_id": {
+                                "value": "com-snaplogic-snap-api-sql-accounts-sqlserverdatabaseaccount"
+                            },
+                            "ref_id": {
+                                "expression": false,
+                                "value": null
+                            }
+                        }
+                    }
+                },
+                "error": {
+                    "error0": {
+                        "label": {
+                            "value": "error0"
+                        },
+                        "view_type": {
+                            "value": "document"
+                        }
+                    },
+                    "error_behavior": {
+                        "value": "fail"
+                    }
+                },
+                "info": {
+                    "label": {
+                        "value": "Lookup Procedure"
+                    },
+                    "notes": {
+                        "value": null
+                    }
+                },
+                "input": {
+                    "input0": {
+                        "label": {
+                            "value": "input0"
+                        },
+                        "view_type": {
+                            "value": "document"
+                        }
+                    }
+                },
+                "output": {
+                    "output0": {
+                        "label": {
+                            "value": "output0"
+                        },
+                        "view_type": {
+                            "value": "document"
+                        }
+                    }
+                },
+                "settings": {
+                    "lookupConditions": {
+                        "value": [
+                            {
+                                "column": {
+                                    "expression": false,
+                                    "value": "\"DEP_ID\""
+                                },
+                                "value": {
+                                    "expression": true,
+                                    "value": "$DEP_ID"
+                                }
+                            },
+                            {
+                                "column": {
+                                    "expression": false,
+                                    "value": "\"STU_ID\""
+                                },
+                                "value": {
+                                    "expression": true,
+                                    "value": "$STU_ID"
+                                }
+                            }
+                        ]
+                    },
+                    "outputFields": {
+                        "value": [
+                            {
+                                "outputField": {
+                                    "expression": false,
+                                    "value": "\"DEP_ID\""
+                                }
+                            },
+                            {
+                                "outputField": {
+                                    "expression": false,
+                                    "value": "\"stu_id\""
+                                }
+                            },
+                            {
+                                "outputField": {
+                                    "expression": false,
+                                    "value": "\"DEPT_NAME\""
+                                }
+                            },
+                            {
+                                "outputField": {
+                                    "expression": false,
+                                    "value": "\"STAFF_ID\""
+                                }
+                            },
+                            {
+                                "outputField": {
+                                    "expression": false,
+                                    "value": "\"DEP_ID\""
+                                }
+                            },
+                            {
+                                "outputField": {
+                                    "expression": false,
+                                    "value": "\"stu_id\""
+                                }
+                            }
+                        ]
+                    },
+                    "passThrough": {
+                        "value": false
+                    },
+                    "schemaName": {
+                        "expression": false,
+                        "value": "dbo"
+                    },
+                    "tableName": {
+                        "expression": false,
+                        "value": "STUDENT_DEP"
+                    }
+                },
+                "view_serial": 100
+            }
+        },
+        "11111111-1111-1111-1111-00000000001d": {
+            "class_id": "com-snaplogic-snaps-sqlserver-lookup",
+            "class_version": 3,
+            "instance_id": "11111111-1111-1111-1111-00000000001d",
+            "property_map": {
+                "account": {
+                    "account_ref": {
+                        "expression": false,
+                        "value": {
+                            "label": {
+                                "expression": false,
+                                "value": "GANESH_SQL"
+                            },
+                            "ref_class_id": {
+                                "value": "com-snaplogic-snap-api-sql-accounts-sqlserverdatabaseaccount"
+                            },
+                            "ref_id": {
+                                "expression": false,
+                                "value": null
+                            }
+                        }
+                    }
+                },
+                "error": {
+                    "error0": {
+                        "label": {
+                            "value": "error0"
+                        },
+                        "view_type": {
+                            "value": "document"
+                        }
+                    },
+                    "error_behavior": {
+                        "value": "fail"
+                    }
+                },
+                "info": {
+                    "label": {
+                        "value": "Lookup Procedure"
+                    },
+                    "notes": {
+                        "value": null
+                    }
+                },
+                "input": {
+                    "input0": {
+                        "label": {
+                            "value": "input0"
+                        },
+                        "view_type": {
+                            "value": "document"
+                        }
+                    }
+                },
+                "output": {
+                    "output0": {
+                        "label": {
+                            "value": "output0"
+                        },
+                        "view_type": {
+                            "value": "document"
+                        }
+                    }
+                },
+                "settings": {
+                    "lookupConditions": {
+                        "value": [
+                            {
+                                "column": {
+                                    "expression": false,
+                                    "value": "\"DEP_ID\""
+                                },
+                                "value": {
+                                    "expression": true,
+                                    "value": "$DEP_ID"
+                                }
+                            },
+                            {
+                                "column": {
+                                    "expression": false,
+                                    "value": "\"STU_ID\""
+                                },
+                                "value": {
+                                    "expression": true,
+                                    "value": "$STU_ID"
+                                }
+                            }
+                        ]
+                    },
+                    "outputFields": {
+                        "value": [
+                            {
+                                "outputField": {
+                                    "expression": false,
+                                    "value": "\"DEP_ID\""
+                                }
+                            },
+                            {
+                                "outputField": {
+                                    "expression": false,
+                                    "value": "\"stu_id\""
+                                }
+                            },
+                            {
+                                "outputField": {
+                                    "expression": false,
+                                    "value": "\"DEPT_NAME\""
+                                }
+                            },
+                            {
+                                "outputField": {
+                                    "expression": false,
+                                    "value": "\"STAFF_ID\""
+                                }
+                            },
+                            {
+                                "outputField": {
+                                    "expression": false,
+                                    "value": "\"DEP_ID\""
+                                }
+                            },
+                            {
+                                "outputField": {
+                                    "expression": false,
+                                    "value": "\"stu_id\""
+                                }
+                            }
+                        ]
+                    },
+                    "passThrough": {
+                        "value": true
+                    },
+                    "schemaName": {
+                        "expression": false,
+                        "value": "dbo"
+                    },
+                    "tableName": {
+                        "expression": false,
+                        "value": "STUDENT_DEP"
+                    }
+                },
+                "view_serial": 100
+            }
+        }
+    }
+}

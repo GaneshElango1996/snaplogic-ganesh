@@ -3,12 +3,12 @@
     "class_map": {
         "11111111-1111-1111-1111-000000000003": {
             "class_build_tag": "snapsmrc500",
-            "class_fqid": "com-snaplogic-snaps-sparksql2x-transform_1-snapsmrc500",
-            "class_id": "com-snaplogic-snaps-sparksql2x-transform",
+            "class_fqid": "com-snaplogic-snaps-sparksql2x-sparksqlexecute_1-snapsmrc500",
+            "class_id": "com-snaplogic-snaps-sparksql2x-sparksqlexecute",
             "class_version": 1,
-            "instance_fqid": "11111111-1111-1111-1111-000000000003_1",
+            "instance_fqid": "11111111-1111-1111-1111-000000000003_11",
             "instance_id": "11111111-1111-1111-1111-000000000003",
-            "instance_version": 1,
+            "instance_version": 11,
             "property_map": {
                 "error": {
                     "error_behavior": {
@@ -17,7 +17,10 @@
                 },
                 "info": {
                     "label": {
-                        "value": "Transform"
+                        "value": "SparkSQL Execute"
+                    },
+                    "notes": {
+                        "value": null
                     }
                 },
                 "input": {
@@ -41,21 +44,22 @@
                     }
                 },
                 "settings": {
-                    "passThrough": {
-                        "value": true
+                    "SQL": {
+                        "expression": false,
+                        "value": "select Designation,count(Designation) as no_dep from a\ngroup by Designation"
                     },
-                    "transformations": {
-                        "value": {
-                            "mappingTable": {
-                                "value": [
-                                    {
-                                        "expression": {
-                                            "expression": true
-                                        }
-                                    }
-                                ]
+                    "viewTableMapping": {
+                        "value": [
+                            {
+                                "inputView": {
+                                    "value": "input0"
+                                },
+                                "tableName": {
+                                    "expression": false,
+                                    "value": "a"
+                                }
                             }
-                        }
+                        ]
                     }
                 },
                 "view_serial": 100
@@ -95,7 +99,6 @@
                 },
                 "settings": {
                     "directory": {
-                        "expression": false,
                         "value": "s3://poc-common-user/ganesh@agilisium.com/source/sql training.txt"
                     }
                 },
@@ -152,7 +155,7 @@
                         "value": [
                             {
                                 "column_name": {
-                                    "value": "$sno"
+                                    "value": "Sno"
                                 },
                                 "column_type": {
                                     "value": "String"
@@ -160,7 +163,7 @@
                             },
                             {
                                 "column_name": {
-                                    "value": "$Name"
+                                    "value": "name"
                                 },
                                 "column_type": {
                                     "value": "String"
@@ -168,7 +171,15 @@
                             },
                             {
                                 "column_name": {
-                                    "value": "$Salary"
+                                    "value": "Salary"
+                                },
+                                "column_type": {
+                                    "value": "Integer"
+                                }
+                            },
+                            {
+                                "column_name": {
+                                    "value": "Designation"
                                 },
                                 "column_type": {
                                     "value": "String"
@@ -176,15 +187,7 @@
                             },
                             {
                                 "column_name": {
-                                    "value": "$Designation"
-                                },
-                                "column_type": {
-                                    "value": "String"
-                                }
-                            },
-                            {
-                                "column_name": {
-                                    "value": "$Gender"
+                                    "value": "Gender"
                                 },
                                 "column_type": {
                                     "value": "String"
@@ -199,13 +202,13 @@
                         "value": "\\"
                     },
                     "header": {
-                        "value": false
+                        "value": true
                     },
                     "hive_table_name": {
                         "value": null
                     },
                     "library": {
-                        "value": "commons"
+                        "value": "univocity"
                     },
                     "mode": {
                         "value": "PERMISSIVE"
@@ -245,51 +248,6 @@
                 "value": "none"
             }
         },
-        "execution settings": {
-            "spark": {
-                "value": {
-                    "spark_driver_cores": {
-                        "value": null
-                    },
-                    "spark_driver_extraJavaOptions": {
-                        "value": null
-                    },
-                    "spark_driver_memory": {
-                        "value": null
-                    },
-                    "spark_dynamicAllocation_enabled": {
-                        "value": null
-                    },
-                    "spark_dynamicAllocation_initialExecutors": {
-                        "value": null
-                    },
-                    "spark_dynamicAllocation_maxExecutors": {
-                        "value": null
-                    },
-                    "spark_dynamicAllocation_minExecutors": {
-                        "value": null
-                    },
-                    "spark_executor_cores": {
-                        "value": null
-                    },
-                    "spark_executor_extraJavaOptions": {
-                        "value": null
-                    },
-                    "spark_executor_instances": {
-                        "value": null
-                    },
-                    "spark_executor_memory": {
-                        "value": null
-                    },
-                    "spark_hadoop_hive_metastore_uris": {
-                        "value": null
-                    },
-                    "spark_yarn_queue": {
-                        "value": null
-                    }
-                }
-            }
-        },
         "info": {
             "author": {
                 "value": "ganesh.elango@agilisium.com"
@@ -309,7 +267,7 @@
         "output": {
             "11111111-1111-1111-1111-000000000003_output0": {
                 "label": {
-                    "value": "Transform - output0"
+                    "value": "SparkSQL Execute - output0"
                 },
                 "view_type": {
                     "value": "document"
@@ -337,7 +295,7 @@
         "detail_map": {
             "11111111-1111-1111-1111-000000000003": {
                 "error": {},
-                "grid_x_int": 5,
+                "grid_x_int": 4,
                 "grid_y_int": 2,
                 "index": null,
                 "input": {},
@@ -349,7 +307,7 @@
             },
             "11111111-1111-1111-1111-000000000004": {
                 "error": {},
-                "grid_x_int": 3,
+                "grid_x_int": 2,
                 "grid_y_int": 2,
                 "index": null,
                 "input": {},
@@ -357,11 +315,11 @@
                 "recommendation_id": null,
                 "rot_int": 0,
                 "rot_tail_int": 0,
-                "source": ""
+                "source": "snap catagory"
             },
             "11111111-1111-1111-1111-000000000005": {
                 "error": {},
-                "grid_x_int": 4,
+                "grid_x_int": 3,
                 "grid_y_int": 2,
                 "index": null,
                 "input": {},
@@ -378,7 +336,7 @@
     },
     "snap_map": {
         "11111111-1111-1111-1111-000000000003": {
-            "class_id": "com-snaplogic-snaps-sparksql2x-transform",
+            "class_id": "com-snaplogic-snaps-sparksql2x-sparksqlexecute",
             "class_version": 1,
             "instance_id": "11111111-1111-1111-1111-000000000003",
             "property_map": {
@@ -389,7 +347,10 @@
                 },
                 "info": {
                     "label": {
-                        "value": "Transform"
+                        "value": "SparkSQL Execute"
+                    },
+                    "notes": {
+                        "value": null
                     }
                 },
                 "input": {
@@ -413,21 +374,22 @@
                     }
                 },
                 "settings": {
-                    "passThrough": {
-                        "value": true
+                    "SQL": {
+                        "expression": false,
+                        "value": "select Designation,count(Designation) as no_dep from a\ngroup by Designation"
                     },
-                    "transformations": {
-                        "value": {
-                            "mappingTable": {
-                                "value": [
-                                    {
-                                        "expression": {
-                                            "expression": true
-                                        }
-                                    }
-                                ]
+                    "viewTableMapping": {
+                        "value": [
+                            {
+                                "inputView": {
+                                    "value": "input0"
+                                },
+                                "tableName": {
+                                    "expression": false,
+                                    "value": "a"
+                                }
                             }
-                        }
+                        ]
                     }
                 },
                 "view_serial": 100
@@ -463,7 +425,6 @@
                 },
                 "settings": {
                     "directory": {
-                        "expression": false,
                         "value": "s3://poc-common-user/ganesh@agilisium.com/source/sql training.txt"
                     }
                 },
@@ -516,7 +477,7 @@
                         "value": [
                             {
                                 "column_name": {
-                                    "value": "$sno"
+                                    "value": "Sno"
                                 },
                                 "column_type": {
                                     "value": "String"
@@ -524,7 +485,7 @@
                             },
                             {
                                 "column_name": {
-                                    "value": "$Name"
+                                    "value": "name"
                                 },
                                 "column_type": {
                                     "value": "String"
@@ -532,7 +493,15 @@
                             },
                             {
                                 "column_name": {
-                                    "value": "$Salary"
+                                    "value": "Salary"
+                                },
+                                "column_type": {
+                                    "value": "Integer"
+                                }
+                            },
+                            {
+                                "column_name": {
+                                    "value": "Designation"
                                 },
                                 "column_type": {
                                     "value": "String"
@@ -540,15 +509,7 @@
                             },
                             {
                                 "column_name": {
-                                    "value": "$Designation"
-                                },
-                                "column_type": {
-                                    "value": "String"
-                                }
-                            },
-                            {
-                                "column_name": {
-                                    "value": "$Gender"
+                                    "value": "Gender"
                                 },
                                 "column_type": {
                                     "value": "String"
@@ -563,13 +524,13 @@
                         "value": "\\"
                     },
                     "header": {
-                        "value": false
+                        "value": true
                     },
                     "hive_table_name": {
                         "value": null
                     },
                     "library": {
-                        "value": "commons"
+                        "value": "univocity"
                     },
                     "mode": {
                         "value": "PERMISSIVE"

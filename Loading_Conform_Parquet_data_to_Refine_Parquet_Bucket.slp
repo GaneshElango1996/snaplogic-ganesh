@@ -1,41 +1,444 @@
 {
     "class_id": "com-snaplogic-pipeline",
-    "class_version": 8,
+    "class_map": {
+        "11111111-1111-1111-1111-000000000007": {
+            "class_build_tag": "sparksql2x5801",
+            "class_fqid": "com-snaplogic-snaps-sparksql2x-sparksqlexecute_1-sparksql2x5801",
+            "class_id": "com-snaplogic-snaps-sparksql2x-sparksqlexecute",
+            "class_version": 1,
+            "instance_fqid": "11111111-1111-1111-1111-000000000007_1",
+            "instance_id": "11111111-1111-1111-1111-000000000007",
+            "instance_version": 1,
+            "property_map": {
+                "error": {
+                    "error_behavior": {
+                        "value": "fail"
+                    }
+                },
+                "info": {
+                    "label": {
+                        "value": "SparkSQL Execute"
+                    },
+                    "notes": {
+                        "value": null
+                    }
+                },
+                "input": {
+                    "input0": {
+                        "label": {
+                            "value": "input0"
+                        },
+                        "view_type": {
+                            "value": "document"
+                        }
+                    }
+                },
+                "output": {
+                    "output0": {
+                        "label": {
+                            "value": "output0"
+                        },
+                        "view_type": {
+                            "value": "document"
+                        }
+                    }
+                },
+                "settings": {
+                    "SQL": {
+                        "expression": false,
+                        "value": "select \npipeline_id, pipeline_run_id, org_name ,\nsum(case when snap_id='ad' then 1 else 0 end) as active_directory,\nsum(case when snap_id='adobe_cloud_platform' then 1 else 0 end) as adobe_cloud_platform,\nsum(case when snap_id='amazon_sqs' then 1 else 0 end) as amazon_sqs,\nsum(case when snap_id='analytics' then 1 else 0 end) as analytics,\nsum(case when snap_id='anaplan' then 1 else 0 end) as anaplan,\nsum(case when snap_id='aws' then 1 else 0 end) as aws,\nsum(case when snap_id='azure_active_directory' then 1 else 0 end) as azure_active_directory,\nsum(case when snap_id='azure_sql' then 1 else 0 end) as azure_sql,\nsum(case when snap_id='binary' then 1 else 0 end) as binary,\nsum(case when snap_id='birst' then 1 else 0 end) as birst,\nsum(case when snap_id='box' then 1 else 0 end) as box,\nsum(case when snap_id='cassandra' then 1 else 0 end) as cassandra,\nsum(case when snap_id='concur' then 1 else 0 end) as concur,\nsum(case when snap_id='confluent_kafka' then 1 else 0 end) as confluent_kafka,\nsum(case when snap_id='dfa' then 1 else 0 end) as dfa,\nsum(case when snap_id='dynamicsax' then 1 else 0 end) as dynamicsax,\nsum(case when snap_id='dynamodb' then 1 else 0 end) as dynamodb,\nsum(case when snap_id='eloqua' then 1 else 0 end) as eloqua,\nsum(case when snap_id='email' then 1 else 0 end) as email,\nsum(case when snap_id='expensify' then 1 else 0 end) as expensify,\nsum(case when snap_id='facebook' then 1 else 0 end) as facebook,\nsum(case when snap_id='flow' then 1 else 0 end) as flow,\nsum(case when snap_id='flurry' then 1 else 0 end) as flurry,\nsum(case when snap_id='foursquare' then 1 else 0 end) as foursquare,\nsum(case when snap_id='google_bigquery' then 1 else 0 end) as google_bigquery,\nsum(case when snap_id='google_directory' then 1 else 0 end) as google_directory,\nsum(case when snap_id='google_spreadsheet' then 1 else 0 end) as google_spreadsheet,\nsum(case when snap_id='hadoop' then 1 else 0 end) as hadoop,\nsum(case when snap_id='hippo' then 1 else 0 end) as hippo,\nsum(case when snap_id='hive' then 1 else 0 end) as hive,\nsum(case when snap_id='jdbc' then 1 else 0 end) as jdbc,\nsum(case when snap_id='jira' then 1 else 0 end) as jira,\nsum(case when snap_id='jms' then 1 else 0 end) as jms,\nsum(case when snap_id='jwt' then 1 else 0 end) as jwt,\nsum(case when snap_id='kafka' then 1 else 0 end) as kafka,\nsum(case when snap_id='ldap' then 1 else 0 end) as ldap,\nsum(case when snap_id='linkedin' then 1 else 0 end) as linkedin,\nsum(case when snap_id='mongodb' then 1 else 0 end) as mongodb,\nsum(case when snap_id='ms_dynamics' then 1 else 0 end) as ms_dynamics,\nsum(case when snap_id='msexchange' then 1 else 0 end) as msexchange,\nsum(case when snap_id='mysql' then 1 else 0 end) as mysql,\nsum(case when snap_id='netezza' then 1 else 0 end) as netezza,\nsum(case when snap_id='netsuite' then 1 else 0 end) as netsuite,\nsum(case when snap_id='openair' then 1 else 0 end) as openair,\nsum(case when snap_id='oracle' then 1 else 0 end) as oracle,\nsum(case when snap_id='oracleebs' then 1 else 0 end) as oracleebs,\nsum(case when snap_id='postgres' then 1 else 0 end) as postgres,\nsum(case when snap_id='rabbitmq' then 1 else 0 end) as rabbitmq,\nsum(case when snap_id='redshift' then 1 else 0 end) as redshift,\nsum(case when snap_id='reltio' then 1 else 0 end) as reltio,\nsum(case when snap_id='rest' then 1 else 0 end) as rest,\nsum(case when snap_id='salesforce' then 1 else 0 end) as salesforce,\nsum(case when snap_id='sap' then 1 else 0 end) as sap,\nsum(case when snap_id='sap_analytics_cloud' then 1 else 0 end) as sap_analytics_cloud,\nsum(case when snap_id='saphana' then 1 else 0 end) as saphana,\nsum(case when snap_id='script' then 1 else 0 end) as script,\nsum(case when snap_id='servicenow' then 1 else 0 end) as servicenow,\nsum(case when snap_id='snaplogic' then 1 else 0 end) as snaplogic,\nsum(case when snap_id='snowflake' then 1 else 0 end) as snowflake,\nsum(case when snap_id='soap' then 1 else 0 end) as soap,\nsum(case when snap_id='spark' then 1 else 0 end) as spark,\nsum(case when snap_id='sparksql' then 1 else 0 end) as sparksql,\nsum(case when snap_id='splunk' then 1 else 0 end) as splunk,\nsum(case when snap_id='sqlserver' then 1 else 0 end) as sqlserver,\nsum(case when snap_id='sumologic' then 1 else 0 end) as sumologic,\nsum(case when snap_id='swagger' then 1 else 0 end) as swagger,\nsum(case when snap_id='tableau' then 1 else 0 end) as tableau,\nsum(case when snap_id='teradata' then 1 else 0 end) as teradata,\nsum(case when snap_id='transform' then 1 else 0 end) as transform,\nsum(case when snap_id='trillium' then 1 else 0 end) as trillium,\nsum(case when snap_id='twitter' then 1 else 0 end) as twitter,\nsum(case when snap_id='vertica' then 1 else 0 end) as vertica,\nsum(case when snap_id='workday' then 1 else 0 end) as workday,\nsum(case when snap_id='xactly' then 1 else 0 end) as xactly,\nsum(case when snap_id='zuora' then 1 else 0 end) as zuora,\nsum(case when snap_id not in ('ad','adobe_cloud_platform','amazon_sqs','analytics','anaplan','aws','azure_active_directory','azure_sql','binary','birst','box','cassandra','concur','confluent_kafka','dfa','dynamicsax','dynamodb','eloqua','email','expensify','facebook','flow','flurry','foursquare','google_bigquery','google_directory','google_spreadsheet','hadoop','hippo','hive','jdbc','jira',\n'jms','jwt','kafka','ldap','linkedin','mongodb','ms_dynamics','msexchange','mysql','netezza','netsuite','openair','oracle','oracleebs','postgres','rabbitmq','redshift','reltio','rest','salesforce','sap','sap_analytics_cloud','saphana','script','servicenow','snaplogic','snowflake','soap',\n'spark','sparksql','splunk','sqlserver','sumologic','swagger','tableau','teradata','transform','trillium','twitter','vertica','workday','xactly','zuora'\n) then 1 else 0 end) as others\nfrom pipeline\ngroup by pipeline_id,pipeline_run_id,org_name"
+                    },
+                    "viewTableMapping": {
+                        "value": [
+                            {
+                                "inputView": {
+                                    "value": "input0"
+                                },
+                                "tableName": {
+                                    "expression": false,
+                                    "value": "pipeline"
+                                }
+                            }
+                        ]
+                    }
+                },
+                "view_serial": 100
+            }
+        },
+        "11111111-1111-1111-1111-000000000008": {
+            "class_build_tag": "sparksql2x5801",
+            "class_fqid": "com-snaplogic-snaps-sparksql2x-hdfsread_1-sparksql2x5801",
+            "class_id": "com-snaplogic-snaps-sparksql2x-hdfsread",
+            "class_version": 1,
+            "instance_fqid": "11111111-1111-1111-1111-000000000008_1",
+            "instance_id": "11111111-1111-1111-1111-000000000008",
+            "instance_version": 1,
+            "property_map": {
+                "error": {
+                    "error_behavior": {
+                        "value": "fail"
+                    }
+                },
+                "info": {
+                    "label": {
+                        "value": "FileReader"
+                    },
+                    "notes": {
+                        "value": null
+                    }
+                },
+                "output": {
+                    "output0": {
+                        "label": {
+                            "value": "output0"
+                        },
+                        "view_type": {
+                            "value": "binary"
+                        }
+                    }
+                },
+                "settings": {
+                    "directory": {
+                        "expression": true,
+                        "value": "_source_confirm_data_path"
+                    }
+                },
+                "view_serial": 100
+            }
+        },
+        "11111111-1111-1111-1111-000000000009": {
+            "class_build_tag": "sparksql2x5801",
+            "class_fqid": "com-snaplogic-snaps-sparksql2x-hdfswrite_1-sparksql2x5801",
+            "class_id": "com-snaplogic-snaps-sparksql2x-hdfswrite",
+            "class_version": 1,
+            "instance_fqid": "11111111-1111-1111-1111-000000000009_1",
+            "instance_id": "11111111-1111-1111-1111-000000000009",
+            "instance_version": 1,
+            "property_map": {
+                "error": {
+                    "error_behavior": {
+                        "value": "fail"
+                    }
+                },
+                "info": {
+                    "label": {
+                        "value": "FileWriter"
+                    },
+                    "notes": {
+                        "value": null
+                    }
+                },
+                "input": {
+                    "input0": {
+                        "label": {
+                            "value": "input0"
+                        },
+                        "view_type": {
+                            "value": "binary"
+                        }
+                    }
+                },
+                "settings": {
+                    "directory": {
+                        "expression": true,
+                        "value": "_dest_pre_refine_data_path"
+                    },
+                    "executable_during_suggest": {
+                        "value": false
+                    },
+                    "execution_mode": {
+                        "value": "Execute only"
+                    },
+                    "file_action": {
+                        "value": "Overwrite"
+                    }
+                },
+                "view_serial": 100
+            }
+        },
+        "11111111-1111-1111-1111-00000000000a": {
+            "class_build_tag": "snapsmrc490",
+            "class_fqid": "com-snaplogic-snaps-sparksql2x-transform_1-snapsmrc490",
+            "class_id": "com-snaplogic-snaps-sparksql2x-transform",
+            "class_version": 1,
+            "instance_fqid": "11111111-1111-1111-1111-00000000000a_1",
+            "instance_id": "11111111-1111-1111-1111-00000000000a",
+            "instance_version": 1,
+            "property_map": {
+                "error": {
+                    "error_behavior": {
+                        "value": "fail"
+                    }
+                },
+                "info": {
+                    "label": {
+                        "value": "Data_Cleansing"
+                    },
+                    "notes": {
+                        "value": null
+                    }
+                },
+                "input": {
+                    "input0": {
+                        "label": {
+                            "value": "input0"
+                        },
+                        "view_type": {
+                            "value": "document"
+                        }
+                    }
+                },
+                "output": {
+                    "output0": {
+                        "label": {
+                            "value": "output0"
+                        },
+                        "view_type": {
+                            "value": "document"
+                        }
+                    }
+                },
+                "settings": {
+                    "passThrough": {
+                        "value": false
+                    },
+                    "transformations": {
+                        "value": {
+                            "mappingTable": {
+                                "value": [
+                                    {
+                                        "expression": {
+                                            "expression": false,
+                                            "value": "if(pipeline_id is null ,\"0\", pipeline_id)"
+                                        },
+                                        "targetPath": {
+                                            "value": "$pipeline_id"
+                                        }
+                                    },
+                                    {
+                                        "expression": {
+                                            "expression": false,
+                                            "value": "if(pipeline_run_id is null ,\"0\", pipeline_run_id)"
+                                        },
+                                        "targetPath": {
+                                            "value": "$pipeline_run_id"
+                                        }
+                                    },
+                                    {
+                                        "expression": {
+                                            "expression": false,
+                                            "value": "if(org_name is null ,\"unknown\", org_name)"
+                                        },
+                                        "targetPath": {
+                                            "value": "$org_name"
+                                        }
+                                    },
+                                    {
+                                        "expression": {
+                                            "expression": false,
+                                            "value": "if(snap_id is not null, if(instr(snap_id, \"com-snaplogic-snaps\")=0,\"others\", substr(substring_index(snap_id, '-', 4), 21)), \"others\")"
+                                        },
+                                        "targetPath": {
+                                            "value": "$snap_id"
+                                        }
+                                    },
+                                    {
+                                        "expression": {
+                                            "expression": false,
+                                            "value": "$snap_id"
+                                        },
+                                        "targetPath": {
+                                            "value": "$snap_id_orginal"
+                                        }
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                },
+                "view_serial": 100
+            }
+        },
+        "11111111-1111-1111-1111-00000000000b": {
+            "class_build_tag": "sparksql2x5801",
+            "class_fqid": "com-snaplogic-snaps-sparksql2x-parquetformatter_1-sparksql2x5801",
+            "class_id": "com-snaplogic-snaps-sparksql2x-parquetformatter",
+            "class_version": 1,
+            "instance_fqid": "11111111-1111-1111-1111-00000000000b_1",
+            "instance_id": "11111111-1111-1111-1111-00000000000b",
+            "instance_version": 1,
+            "property_map": {
+                "error": {
+                    "error_behavior": {
+                        "value": "fail"
+                    }
+                },
+                "info": {
+                    "label": {
+                        "value": "Parquet Formatter"
+                    }
+                },
+                "input": {
+                    "input0": {
+                        "label": {
+                            "value": "input0"
+                        },
+                        "view_type": {
+                            "value": "document"
+                        }
+                    }
+                },
+                "output": {
+                    "output0": {
+                        "label": {
+                            "value": "output0"
+                        },
+                        "view_type": {
+                            "value": "binary"
+                        }
+                    }
+                },
+                "settings": {},
+                "view_serial": 100
+            }
+        },
+        "11111111-1111-1111-1111-00000000000c": {
+            "class_build_tag": "c618",
+            "class_fqid": "com-snaplogic-snaps-sparksql2x-repartition_1-c618",
+            "class_id": "com-snaplogic-snaps-sparksql2x-repartition",
+            "class_version": 1,
+            "instance_fqid": "11111111-1111-1111-1111-00000000000c_1",
+            "instance_id": "11111111-1111-1111-1111-00000000000c",
+            "instance_version": 1,
+            "property_map": {
+                "error": {
+                    "error_behavior": {
+                        "value": "fail"
+                    }
+                },
+                "info": {
+                    "label": {
+                        "value": "Repartitioning"
+                    },
+                    "notes": {
+                        "value": null
+                    }
+                },
+                "input": {
+                    "input0": {
+                        "label": {
+                            "value": "input0"
+                        },
+                        "view_type": {
+                            "value": "document"
+                        }
+                    }
+                },
+                "output": {
+                    "output0": {
+                        "label": {
+                            "value": "output0"
+                        },
+                        "view_type": {
+                            "value": "document"
+                        }
+                    }
+                },
+                "settings": {
+                    "partitions": {
+                        "value": 500
+                    }
+                },
+                "view_serial": 100
+            }
+        },
+        "11111111-1111-1111-1111-00000000000d": {
+            "class_build_tag": "snapsmrc490",
+            "class_fqid": "com-snaplogic-snaps-sparksql2x-parquetparser_1-snapsmrc490",
+            "class_id": "com-snaplogic-snaps-sparksql2x-parquetparser",
+            "class_version": 1,
+            "instance_fqid": "11111111-1111-1111-1111-00000000000d_1",
+            "instance_id": "11111111-1111-1111-1111-00000000000d",
+            "instance_version": 1,
+            "property_map": {
+                "error": {
+                    "error_behavior": {
+                        "value": "fail"
+                    }
+                },
+                "info": {
+                    "label": {
+                        "value": "Parquet Parser"
+                    }
+                },
+                "input": {
+                    "input0": {
+                        "label": {
+                            "value": "input0"
+                        },
+                        "view_type": {
+                            "value": "binary"
+                        }
+                    }
+                },
+                "output": {
+                    "output0": {
+                        "label": {
+                            "value": "output0"
+                        },
+                        "view_type": {
+                            "value": "document"
+                        }
+                    }
+                },
+                "settings": {
+                    "ignoreEmptyFiles": {
+                        "value": false
+                    },
+                    "mergeSchema": {
+                        "value": false
+                    }
+                },
+                "view_serial": 100
+            }
+        }
+    },
+    "class_version": 9,
     "link_map": {
         "link106": {
-            "dst_id": "11111111-1111-1111-1111-000000000003",
+            "dst_id": "11111111-1111-1111-1111-00000000000d",
             "dst_view_id": "input0",
-            "src_id": "11111111-1111-1111-1111-000000000000",
+            "src_id": "11111111-1111-1111-1111-000000000008",
             "src_view_id": "output0"
         },
         "link129": {
-            "dst_id": "11111111-1111-1111-1111-000000000005",
+            "dst_id": "11111111-1111-1111-1111-00000000000c",
             "dst_view_id": "input0",
-            "src_id": "11111111-1111-1111-1111-000000000004",
+            "src_id": "11111111-1111-1111-1111-00000000000a",
             "src_view_id": "output0"
         },
         "link131": {
-            "dst_id": "11111111-1111-1111-1111-000000000004",
+            "dst_id": "11111111-1111-1111-1111-00000000000a",
             "dst_view_id": "input0",
-            "src_id": "11111111-1111-1111-1111-000000000003",
+            "src_id": "11111111-1111-1111-1111-00000000000d",
             "src_view_id": "output0"
         },
         "link142": {
-            "dst_id": "11111111-1111-1111-1111-000000000001",
+            "dst_id": "11111111-1111-1111-1111-000000000009",
             "dst_view_id": "input0",
-            "src_id": "11111111-1111-1111-1111-000000000002",
+            "src_id": "11111111-1111-1111-1111-00000000000b",
             "src_view_id": "output0"
         },
         "link143": {
-            "dst_id": "11111111-1111-1111-1111-000000000002",
+            "dst_id": "11111111-1111-1111-1111-00000000000b",
             "dst_view_id": "input0",
-            "src_id": "11111111-1111-1111-1111-000000000006",
+            "src_id": "11111111-1111-1111-1111-000000000007",
             "src_view_id": "output0"
         },
         "link150": {
-            "dst_id": "11111111-1111-1111-1111-000000000006",
+            "dst_id": "11111111-1111-1111-1111-000000000007",
             "dst_view_id": "input0",
-            "src_id": "11111111-1111-1111-1111-000000000005",
+            "src_id": "11111111-1111-1111-1111-00000000000c",
             "src_view_id": "output0"
         }
     },
@@ -164,7 +567,19 @@
     "render_map": {
         "default_snaplex": null,
         "detail_map": {
-            "11111111-1111-1111-1111-000000000000": {
+            "11111111-1111-1111-1111-000000000007": {
+                "error": {},
+                "grid_x_int": 5,
+                "grid_y_int": 2,
+                "index": null,
+                "input": {},
+                "output": {},
+                "recommendation_id": null,
+                "rot_int": 0,
+                "rot_tail_int": 0,
+                "source": "snap catagory"
+            },
+            "11111111-1111-1111-1111-000000000008": {
                 "error": {},
                 "grid_x_int": 1,
                 "grid_y_int": 2,
@@ -176,7 +591,7 @@
                 "rot_tail_int": 90,
                 "source": ""
             },
-            "11111111-1111-1111-1111-000000000001": {
+            "11111111-1111-1111-1111-000000000009": {
                 "error": {},
                 "grid_x_int": 7,
                 "grid_y_int": 2,
@@ -188,31 +603,7 @@
                 "rot_tail_int": 0,
                 "source": ""
             },
-            "11111111-1111-1111-1111-000000000002": {
-                "error": {},
-                "grid_x_int": 6,
-                "grid_y_int": 2,
-                "index": null,
-                "input": {},
-                "output": {},
-                "recommendation_id": null,
-                "rot_int": 0,
-                "rot_tail_int": 0,
-                "source": ""
-            },
-            "11111111-1111-1111-1111-000000000003": {
-                "error": {},
-                "grid_x_int": 2,
-                "grid_y_int": 2,
-                "index": null,
-                "input": {},
-                "output": {},
-                "recommendation_id": null,
-                "rot_int": 0,
-                "rot_tail_int": 0,
-                "source": ""
-            },
-            "11111111-1111-1111-1111-000000000004": {
+            "11111111-1111-1111-1111-00000000000a": {
                 "error": {},
                 "grid_x_int": 3,
                 "grid_y_int": 2,
@@ -224,7 +615,19 @@
                 "rot_tail_int": 0,
                 "source": ""
             },
-            "11111111-1111-1111-1111-000000000005": {
+            "11111111-1111-1111-1111-00000000000b": {
+                "error": {},
+                "grid_x_int": 6,
+                "grid_y_int": 2,
+                "index": null,
+                "input": {},
+                "output": {},
+                "recommendation_id": null,
+                "rot_int": 0,
+                "rot_tail_int": 0,
+                "source": ""
+            },
+            "11111111-1111-1111-1111-00000000000c": {
                 "error": {},
                 "grid_x_int": 4,
                 "grid_y_int": 2,
@@ -236,9 +639,9 @@
                 "rot_tail_int": 0,
                 "source": ""
             },
-            "11111111-1111-1111-1111-000000000006": {
+            "11111111-1111-1111-1111-00000000000d": {
                 "error": {},
-                "grid_x_int": 5,
+                "grid_x_int": 2,
                 "grid_y_int": 2,
                 "index": null,
                 "input": {},
@@ -246,7 +649,7 @@
                 "recommendation_id": null,
                 "rot_int": 0,
                 "rot_tail_int": 0,
-                "source": "snap catagory"
+                "source": ""
             }
         },
         "pan_x_num": 0,
@@ -254,10 +657,70 @@
         "scale_ratio": 1
     },
     "snap_map": {
-        "11111111-1111-1111-1111-000000000000": {
+        "11111111-1111-1111-1111-000000000007": {
+            "class_id": "com-snaplogic-snaps-sparksql2x-sparksqlexecute",
+            "class_version": 1,
+            "instance_id": "11111111-1111-1111-1111-000000000007",
+            "property_map": {
+                "error": {
+                    "error_behavior": {
+                        "value": "fail"
+                    }
+                },
+                "info": {
+                    "label": {
+                        "value": "SparkSQL Execute"
+                    },
+                    "notes": {
+                        "value": null
+                    }
+                },
+                "input": {
+                    "input0": {
+                        "label": {
+                            "value": "input0"
+                        },
+                        "view_type": {
+                            "value": "document"
+                        }
+                    }
+                },
+                "output": {
+                    "output0": {
+                        "label": {
+                            "value": "output0"
+                        },
+                        "view_type": {
+                            "value": "document"
+                        }
+                    }
+                },
+                "settings": {
+                    "SQL": {
+                        "expression": false,
+                        "value": "select \npipeline_id, pipeline_run_id, org_name ,\nsum(case when snap_id='ad' then 1 else 0 end) as active_directory,\nsum(case when snap_id='adobe_cloud_platform' then 1 else 0 end) as adobe_cloud_platform,\nsum(case when snap_id='amazon_sqs' then 1 else 0 end) as amazon_sqs,\nsum(case when snap_id='analytics' then 1 else 0 end) as analytics,\nsum(case when snap_id='anaplan' then 1 else 0 end) as anaplan,\nsum(case when snap_id='aws' then 1 else 0 end) as aws,\nsum(case when snap_id='azure_active_directory' then 1 else 0 end) as azure_active_directory,\nsum(case when snap_id='azure_sql' then 1 else 0 end) as azure_sql,\nsum(case when snap_id='binary' then 1 else 0 end) as binary,\nsum(case when snap_id='birst' then 1 else 0 end) as birst,\nsum(case when snap_id='box' then 1 else 0 end) as box,\nsum(case when snap_id='cassandra' then 1 else 0 end) as cassandra,\nsum(case when snap_id='concur' then 1 else 0 end) as concur,\nsum(case when snap_id='confluent_kafka' then 1 else 0 end) as confluent_kafka,\nsum(case when snap_id='dfa' then 1 else 0 end) as dfa,\nsum(case when snap_id='dynamicsax' then 1 else 0 end) as dynamicsax,\nsum(case when snap_id='dynamodb' then 1 else 0 end) as dynamodb,\nsum(case when snap_id='eloqua' then 1 else 0 end) as eloqua,\nsum(case when snap_id='email' then 1 else 0 end) as email,\nsum(case when snap_id='expensify' then 1 else 0 end) as expensify,\nsum(case when snap_id='facebook' then 1 else 0 end) as facebook,\nsum(case when snap_id='flow' then 1 else 0 end) as flow,\nsum(case when snap_id='flurry' then 1 else 0 end) as flurry,\nsum(case when snap_id='foursquare' then 1 else 0 end) as foursquare,\nsum(case when snap_id='google_bigquery' then 1 else 0 end) as google_bigquery,\nsum(case when snap_id='google_directory' then 1 else 0 end) as google_directory,\nsum(case when snap_id='google_spreadsheet' then 1 else 0 end) as google_spreadsheet,\nsum(case when snap_id='hadoop' then 1 else 0 end) as hadoop,\nsum(case when snap_id='hippo' then 1 else 0 end) as hippo,\nsum(case when snap_id='hive' then 1 else 0 end) as hive,\nsum(case when snap_id='jdbc' then 1 else 0 end) as jdbc,\nsum(case when snap_id='jira' then 1 else 0 end) as jira,\nsum(case when snap_id='jms' then 1 else 0 end) as jms,\nsum(case when snap_id='jwt' then 1 else 0 end) as jwt,\nsum(case when snap_id='kafka' then 1 else 0 end) as kafka,\nsum(case when snap_id='ldap' then 1 else 0 end) as ldap,\nsum(case when snap_id='linkedin' then 1 else 0 end) as linkedin,\nsum(case when snap_id='mongodb' then 1 else 0 end) as mongodb,\nsum(case when snap_id='ms_dynamics' then 1 else 0 end) as ms_dynamics,\nsum(case when snap_id='msexchange' then 1 else 0 end) as msexchange,\nsum(case when snap_id='mysql' then 1 else 0 end) as mysql,\nsum(case when snap_id='netezza' then 1 else 0 end) as netezza,\nsum(case when snap_id='netsuite' then 1 else 0 end) as netsuite,\nsum(case when snap_id='openair' then 1 else 0 end) as openair,\nsum(case when snap_id='oracle' then 1 else 0 end) as oracle,\nsum(case when snap_id='oracleebs' then 1 else 0 end) as oracleebs,\nsum(case when snap_id='postgres' then 1 else 0 end) as postgres,\nsum(case when snap_id='rabbitmq' then 1 else 0 end) as rabbitmq,\nsum(case when snap_id='redshift' then 1 else 0 end) as redshift,\nsum(case when snap_id='reltio' then 1 else 0 end) as reltio,\nsum(case when snap_id='rest' then 1 else 0 end) as rest,\nsum(case when snap_id='salesforce' then 1 else 0 end) as salesforce,\nsum(case when snap_id='sap' then 1 else 0 end) as sap,\nsum(case when snap_id='sap_analytics_cloud' then 1 else 0 end) as sap_analytics_cloud,\nsum(case when snap_id='saphana' then 1 else 0 end) as saphana,\nsum(case when snap_id='script' then 1 else 0 end) as script,\nsum(case when snap_id='servicenow' then 1 else 0 end) as servicenow,\nsum(case when snap_id='snaplogic' then 1 else 0 end) as snaplogic,\nsum(case when snap_id='snowflake' then 1 else 0 end) as snowflake,\nsum(case when snap_id='soap' then 1 else 0 end) as soap,\nsum(case when snap_id='spark' then 1 else 0 end) as spark,\nsum(case when snap_id='sparksql' then 1 else 0 end) as sparksql,\nsum(case when snap_id='splunk' then 1 else 0 end) as splunk,\nsum(case when snap_id='sqlserver' then 1 else 0 end) as sqlserver,\nsum(case when snap_id='sumologic' then 1 else 0 end) as sumologic,\nsum(case when snap_id='swagger' then 1 else 0 end) as swagger,\nsum(case when snap_id='tableau' then 1 else 0 end) as tableau,\nsum(case when snap_id='teradata' then 1 else 0 end) as teradata,\nsum(case when snap_id='transform' then 1 else 0 end) as transform,\nsum(case when snap_id='trillium' then 1 else 0 end) as trillium,\nsum(case when snap_id='twitter' then 1 else 0 end) as twitter,\nsum(case when snap_id='vertica' then 1 else 0 end) as vertica,\nsum(case when snap_id='workday' then 1 else 0 end) as workday,\nsum(case when snap_id='xactly' then 1 else 0 end) as xactly,\nsum(case when snap_id='zuora' then 1 else 0 end) as zuora,\nsum(case when snap_id not in ('ad','adobe_cloud_platform','amazon_sqs','analytics','anaplan','aws','azure_active_directory','azure_sql','binary','birst','box','cassandra','concur','confluent_kafka','dfa','dynamicsax','dynamodb','eloqua','email','expensify','facebook','flow','flurry','foursquare','google_bigquery','google_directory','google_spreadsheet','hadoop','hippo','hive','jdbc','jira',\n'jms','jwt','kafka','ldap','linkedin','mongodb','ms_dynamics','msexchange','mysql','netezza','netsuite','openair','oracle','oracleebs','postgres','rabbitmq','redshift','reltio','rest','salesforce','sap','sap_analytics_cloud','saphana','script','servicenow','snaplogic','snowflake','soap',\n'spark','sparksql','splunk','sqlserver','sumologic','swagger','tableau','teradata','transform','trillium','twitter','vertica','workday','xactly','zuora'\n) then 1 else 0 end) as others\nfrom pipeline\ngroup by pipeline_id,pipeline_run_id,org_name"
+                    },
+                    "viewTableMapping": {
+                        "value": [
+                            {
+                                "inputView": {
+                                    "value": "input0"
+                                },
+                                "tableName": {
+                                    "expression": false,
+                                    "value": "pipeline"
+                                }
+                            }
+                        ]
+                    }
+                },
+                "view_serial": 100
+            }
+        },
+        "11111111-1111-1111-1111-000000000008": {
             "class_id": "com-snaplogic-snaps-sparksql2x-hdfsread",
             "class_version": 1,
-            "instance_id": "11111111-1111-1111-1111-000000000000",
+            "instance_id": "11111111-1111-1111-1111-000000000008",
             "property_map": {
                 "error": {
                     "error_behavior": {
@@ -291,10 +754,10 @@
                 "view_serial": 100
             }
         },
-        "11111111-1111-1111-1111-000000000001": {
+        "11111111-1111-1111-1111-000000000009": {
             "class_id": "com-snaplogic-snaps-sparksql2x-hdfswrite",
             "class_version": 1,
-            "instance_id": "11111111-1111-1111-1111-000000000001",
+            "instance_id": "11111111-1111-1111-1111-000000000009",
             "property_map": {
                 "error": {
                     "error_behavior": {
@@ -327,6 +790,9 @@
                     "executable_during_suggest": {
                         "value": false
                     },
+                    "execution_mode": {
+                        "value": "Execute only"
+                    },
                     "file_action": {
                         "value": "Overwrite"
                     }
@@ -334,95 +800,10 @@
                 "view_serial": 100
             }
         },
-        "11111111-1111-1111-1111-000000000002": {
-            "class_id": "com-snaplogic-snaps-sparksql2x-parquetformatter",
-            "class_version": 1,
-            "instance_id": "11111111-1111-1111-1111-000000000002",
-            "property_map": {
-                "error": {
-                    "error_behavior": {
-                        "value": "fail"
-                    }
-                },
-                "info": {
-                    "label": {
-                        "value": "Parquet Formatter"
-                    }
-                },
-                "input": {
-                    "input0": {
-                        "label": {
-                            "value": "input0"
-                        },
-                        "view_type": {
-                            "value": "document"
-                        }
-                    }
-                },
-                "output": {
-                    "output0": {
-                        "label": {
-                            "value": "output0"
-                        },
-                        "view_type": {
-                            "value": "binary"
-                        }
-                    }
-                },
-                "settings": {},
-                "view_serial": 100
-            }
-        },
-        "11111111-1111-1111-1111-000000000003": {
-            "class_id": "com-snaplogic-snaps-sparksql2x-parquetparser",
-            "class_version": 1,
-            "instance_id": "11111111-1111-1111-1111-000000000003",
-            "property_map": {
-                "error": {
-                    "error_behavior": {
-                        "value": "fail"
-                    }
-                },
-                "info": {
-                    "label": {
-                        "value": "Parquet Parser"
-                    }
-                },
-                "input": {
-                    "input0": {
-                        "label": {
-                            "value": "input0"
-                        },
-                        "view_type": {
-                            "value": "binary"
-                        }
-                    }
-                },
-                "output": {
-                    "output0": {
-                        "label": {
-                            "value": "output0"
-                        },
-                        "view_type": {
-                            "value": "document"
-                        }
-                    }
-                },
-                "settings": {
-                    "ignoreEmptyFiles": {
-                        "value": false
-                    },
-                    "mergeSchema": {
-                        "value": false
-                    }
-                },
-                "view_serial": 100
-            }
-        },
-        "11111111-1111-1111-1111-000000000004": {
+        "11111111-1111-1111-1111-00000000000a": {
             "class_id": "com-snaplogic-snaps-sparksql2x-transform",
             "class_version": 1,
-            "instance_id": "11111111-1111-1111-1111-000000000004",
+            "instance_id": "11111111-1111-1111-1111-00000000000a",
             "property_map": {
                 "error": {
                     "error_behavior": {
@@ -518,10 +899,49 @@
                 "view_serial": 100
             }
         },
-        "11111111-1111-1111-1111-000000000005": {
+        "11111111-1111-1111-1111-00000000000b": {
+            "class_id": "com-snaplogic-snaps-sparksql2x-parquetformatter",
+            "class_version": 1,
+            "instance_id": "11111111-1111-1111-1111-00000000000b",
+            "property_map": {
+                "error": {
+                    "error_behavior": {
+                        "value": "fail"
+                    }
+                },
+                "info": {
+                    "label": {
+                        "value": "Parquet Formatter"
+                    }
+                },
+                "input": {
+                    "input0": {
+                        "label": {
+                            "value": "input0"
+                        },
+                        "view_type": {
+                            "value": "document"
+                        }
+                    }
+                },
+                "output": {
+                    "output0": {
+                        "label": {
+                            "value": "output0"
+                        },
+                        "view_type": {
+                            "value": "binary"
+                        }
+                    }
+                },
+                "settings": {},
+                "view_serial": 100
+            }
+        },
+        "11111111-1111-1111-1111-00000000000c": {
             "class_id": "com-snaplogic-snaps-sparksql2x-repartition",
             "class_version": 1,
-            "instance_id": "11111111-1111-1111-1111-000000000005",
+            "instance_id": "11111111-1111-1111-1111-00000000000c",
             "property_map": {
                 "error": {
                     "error_behavior": {
@@ -564,10 +984,10 @@
                 "view_serial": 100
             }
         },
-        "11111111-1111-1111-1111-000000000006": {
-            "class_id": "com-snaplogic-snaps-sparksql2x-sparksqlexecute",
+        "11111111-1111-1111-1111-00000000000d": {
+            "class_id": "com-snaplogic-snaps-sparksql2x-parquetparser",
             "class_version": 1,
-            "instance_id": "11111111-1111-1111-1111-000000000006",
+            "instance_id": "11111111-1111-1111-1111-00000000000d",
             "property_map": {
                 "error": {
                     "error_behavior": {
@@ -576,10 +996,7 @@
                 },
                 "info": {
                     "label": {
-                        "value": "SparkSQL Execute"
-                    },
-                    "notes": {
-                        "value": null
+                        "value": "Parquet Parser"
                     }
                 },
                 "input": {
@@ -588,7 +1005,7 @@
                             "value": "input0"
                         },
                         "view_type": {
-                            "value": "document"
+                            "value": "binary"
                         }
                     }
                 },
@@ -603,22 +1020,11 @@
                     }
                 },
                 "settings": {
-                    "SQL": {
-                        "expression": false,
-                        "value": "select \npipeline_id, pipeline_run_id, org_name ,\nsum(case when snap_id='ad' then 1 else 0 end) as active_directory,\nsum(case when snap_id='adobe_cloud_platform' then 1 else 0 end) as adobe_cloud_platform,\nsum(case when snap_id='amazon_sqs' then 1 else 0 end) as amazon_sqs,\nsum(case when snap_id='analytics' then 1 else 0 end) as analytics,\nsum(case when snap_id='anaplan' then 1 else 0 end) as anaplan,\nsum(case when snap_id='aws' then 1 else 0 end) as aws,\nsum(case when snap_id='azure_active_directory' then 1 else 0 end) as azure_active_directory,\nsum(case when snap_id='azure_sql' then 1 else 0 end) as azure_sql,\nsum(case when snap_id='binary' then 1 else 0 end) as binary,\nsum(case when snap_id='birst' then 1 else 0 end) as birst,\nsum(case when snap_id='box' then 1 else 0 end) as box,\nsum(case when snap_id='cassandra' then 1 else 0 end) as cassandra,\nsum(case when snap_id='concur' then 1 else 0 end) as concur,\nsum(case when snap_id='confluent_kafka' then 1 else 0 end) as confluent_kafka,\nsum(case when snap_id='dfa' then 1 else 0 end) as dfa,\nsum(case when snap_id='dynamicsax' then 1 else 0 end) as dynamicsax,\nsum(case when snap_id='dynamodb' then 1 else 0 end) as dynamodb,\nsum(case when snap_id='eloqua' then 1 else 0 end) as eloqua,\nsum(case when snap_id='email' then 1 else 0 end) as email,\nsum(case when snap_id='expensify' then 1 else 0 end) as expensify,\nsum(case when snap_id='facebook' then 1 else 0 end) as facebook,\nsum(case when snap_id='flow' then 1 else 0 end) as flow,\nsum(case when snap_id='flurry' then 1 else 0 end) as flurry,\nsum(case when snap_id='foursquare' then 1 else 0 end) as foursquare,\nsum(case when snap_id='google_bigquery' then 1 else 0 end) as google_bigquery,\nsum(case when snap_id='google_directory' then 1 else 0 end) as google_directory,\nsum(case when snap_id='google_spreadsheet' then 1 else 0 end) as google_spreadsheet,\nsum(case when snap_id='hadoop' then 1 else 0 end) as hadoop,\nsum(case when snap_id='hippo' then 1 else 0 end) as hippo,\nsum(case when snap_id='hive' then 1 else 0 end) as hive,\nsum(case when snap_id='jdbc' then 1 else 0 end) as jdbc,\nsum(case when snap_id='jira' then 1 else 0 end) as jira,\nsum(case when snap_id='jms' then 1 else 0 end) as jms,\nsum(case when snap_id='jwt' then 1 else 0 end) as jwt,\nsum(case when snap_id='kafka' then 1 else 0 end) as kafka,\nsum(case when snap_id='ldap' then 1 else 0 end) as ldap,\nsum(case when snap_id='linkedin' then 1 else 0 end) as linkedin,\nsum(case when snap_id='mongodb' then 1 else 0 end) as mongodb,\nsum(case when snap_id='ms_dynamics' then 1 else 0 end) as ms_dynamics,\nsum(case when snap_id='msexchange' then 1 else 0 end) as msexchange,\nsum(case when snap_id='mysql' then 1 else 0 end) as mysql,\nsum(case when snap_id='netezza' then 1 else 0 end) as netezza,\nsum(case when snap_id='netsuite' then 1 else 0 end) as netsuite,\nsum(case when snap_id='openair' then 1 else 0 end) as openair,\nsum(case when snap_id='oracle' then 1 else 0 end) as oracle,\nsum(case when snap_id='oracleebs' then 1 else 0 end) as oracleebs,\nsum(case when snap_id='postgres' then 1 else 0 end) as postgres,\nsum(case when snap_id='rabbitmq' then 1 else 0 end) as rabbitmq,\nsum(case when snap_id='redshift' then 1 else 0 end) as redshift,\nsum(case when snap_id='reltio' then 1 else 0 end) as reltio,\nsum(case when snap_id='rest' then 1 else 0 end) as rest,\nsum(case when snap_id='salesforce' then 1 else 0 end) as salesforce,\nsum(case when snap_id='sap' then 1 else 0 end) as sap,\nsum(case when snap_id='sap_analytics_cloud' then 1 else 0 end) as sap_analytics_cloud,\nsum(case when snap_id='saphana' then 1 else 0 end) as saphana,\nsum(case when snap_id='script' then 1 else 0 end) as script,\nsum(case when snap_id='servicenow' then 1 else 0 end) as servicenow,\nsum(case when snap_id='snaplogic' then 1 else 0 end) as snaplogic,\nsum(case when snap_id='snowflake' then 1 else 0 end) as snowflake,\nsum(case when snap_id='soap' then 1 else 0 end) as soap,\nsum(case when snap_id='spark' then 1 else 0 end) as spark,\nsum(case when snap_id='sparksql' then 1 else 0 end) as sparksql,\nsum(case when snap_id='splunk' then 1 else 0 end) as splunk,\nsum(case when snap_id='sqlserver' then 1 else 0 end) as sqlserver,\nsum(case when snap_id='sumologic' then 1 else 0 end) as sumologic,\nsum(case when snap_id='swagger' then 1 else 0 end) as swagger,\nsum(case when snap_id='tableau' then 1 else 0 end) as tableau,\nsum(case when snap_id='teradata' then 1 else 0 end) as teradata,\nsum(case when snap_id='transform' then 1 else 0 end) as transform,\nsum(case when snap_id='trillium' then 1 else 0 end) as trillium,\nsum(case when snap_id='twitter' then 1 else 0 end) as twitter,\nsum(case when snap_id='vertica' then 1 else 0 end) as vertica,\nsum(case when snap_id='workday' then 1 else 0 end) as workday,\nsum(case when snap_id='xactly' then 1 else 0 end) as xactly,\nsum(case when snap_id='zuora' then 1 else 0 end) as zuora,\nsum(case when snap_id not in ('ad','adobe_cloud_platform','amazon_sqs','analytics','anaplan','aws','azure_active_directory','azure_sql','binary','birst','box','cassandra','concur','confluent_kafka','dfa','dynamicsax','dynamodb','eloqua','email','expensify','facebook','flow','flurry','foursquare','google_bigquery','google_directory','google_spreadsheet','hadoop','hippo','hive','jdbc','jira',\n'jms','jwt','kafka','ldap','linkedin','mongodb','ms_dynamics','msexchange','mysql','netezza','netsuite','openair','oracle','oracleebs','postgres','rabbitmq','redshift','reltio','rest','salesforce','sap','sap_analytics_cloud','saphana','script','servicenow','snaplogic','snowflake','soap',\n'spark','sparksql','splunk','sqlserver','sumologic','swagger','tableau','teradata','transform','trillium','twitter','vertica','workday','xactly','zuora'\n) then 1 else 0 end) as others\nfrom pipeline\ngroup by pipeline_id,pipeline_run_id,org_name"
+                    "ignoreEmptyFiles": {
+                        "value": false
                     },
-                    "viewTableMapping": {
-                        "value": [
-                            {
-                                "inputView": {
-                                    "value": "input0"
-                                },
-                                "tableName": {
-                                    "expression": false,
-                                    "value": "pipeline"
-                                }
-                            }
-                        ]
+                    "mergeSchema": {
+                        "value": false
                     }
                 },
                 "view_serial": 100

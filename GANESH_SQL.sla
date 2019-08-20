@@ -1,0 +1,98 @@
+{
+    "class_id": "com-snaplogic-snap-api-sql-accounts-sqlserverdatabaseaccount",
+    "class_version": 3,
+    "migration_metadata": {
+        "source_org": "Agilisium"
+    },
+    "property_map": {
+        "info": {
+            "label": {
+                "value": "GANESH_SQL"
+            },
+            "notes": {
+                "value": null
+            }
+        },
+        "settings": {
+            "advancedProperties": {
+                "value": {
+                    "acquireIncrement": {
+                        "value": 1
+                    },
+                    "autoCommit": {
+                        "value": true
+                    },
+                    "batchSize": {
+                        "value": 50
+                    },
+                    "checkoutTimeout": {
+                        "value": 10000
+                    },
+                    "fetchSize": {
+                        "value": 100
+                    },
+                    "idleConnectionTestPeriod": {
+                        "value": 5
+                    },
+                    "maxIdleTime": {
+                        "value": 30
+                    },
+                    "maxPoolSize": {
+                        "value": 50
+                    },
+                    "minPoolSize": {
+                        "value": 0
+                    },
+                    "retryAttempts": {
+                        "value": 0
+                    },
+                    "urlProperties": {
+                        "value": [
+                            {
+                                "urlPropertyName": {
+                                    "value": "selectMethod"
+                                },
+                                "urlPropertyValue": {
+                                    "value": "cursor"
+                                }
+                            }
+                        ]
+                    }
+                }
+            },
+            "connectionProperties": {
+                "value": {
+                    "JdbcDriversProp": {
+                        "value": []
+                    },
+                    "databaseName": {
+                        "value": "tempdb"
+                    },
+                    "hostname": {
+                        "value": "mydbinstance.csqth4u0zi2z.us-west-2.rds.amazonaws.com"
+                    },
+                    "jdbcDriverClass": {
+                        "value": "com.microsoft.sqlserver.jdbc.SQLServerDriver"
+                    },
+                    "password": {
+                        "fp": "7227853bc1e162e36f314c79fa97dc25bff63e76b4d1ba0d56e83253dfd1052d",
+                        "key": "account-cloud-managed-5c063de766ef2719b0049fcf-2018-12-04T08:42:51-605214+00:00",
+                        "sym_iv": "nkJEK0tyE2juCFNgDiwIZw==",
+                        "sym_key": "LgL7I9mBweU7zfN2cSKP8G2upFuMzJRMlwPhNsOJJ3/dKdO4caXLfxaWyCFCiQ9AayDnSsqOg4bCW38DfN7N/BZsgO+DGzy+wyp7T4vBj2Ux6dBzMFn3hLIP0GTw9yH8mq4vnvhjexUaucgIHcTMDMZrMrz+eIu74oxso5ApZO4fvNTf2TF0Oep0hejrwJRcArDGRqRZwqsNnLmFSZWpuPIzrFq2/vIhv18pL9jCMhAYARlBlW5fnz+3fE6PrSiJq1F8DmXpS1Ni0yGnMDeJZa7F8oBhUsz3NJoZZlhKIvmgLwpgNwhEYhLxAlkH54ajtDg/lRm4ad5zkOWZTMGjSA==",
+                        "value": "mtxYU9lRSZO5Y+1aegMVPg=="
+                    },
+                    "portNumber": {
+                        "value": 1433
+                    },
+                    "username": {
+                        "value": "admin"
+                    },
+                    "version": {
+                        "value": "SQLSERVER2008"
+                    }
+                }
+            }
+        },
+        "view_serial": 100
+    }
+}
